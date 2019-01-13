@@ -18,7 +18,7 @@ arcpy.AddMessage(r"Let's get started!")
 ### Course schedule
 
 
-Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |	Topic
+Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Topic
 ------------ | ---------
 Jan 25 | **1. Introduction:** Overview of different assignments for this class. Set up Github accounts. **2. Interacting with Python:** The different Python environments and ways to interact with Python through ArcGIS (and not) – Python.exe, bat files, just clicking on a *.py, geoprocessing command line, PyCharm, toolboxes (*.pyt and traditional).
 Feb 1 |	**3. Python basics:** Commenting, import statements for packages, variables and data types (str, int, float, lists, tuples, dictionaries). Iteration using: for loops, if/elif/else statements, while statements. Code cleanliness (indentation using tabs/spaces, spotting indentation errors), Using Functions to block code. Zero-based indexing.
