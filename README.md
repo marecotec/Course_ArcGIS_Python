@@ -9,6 +9,14 @@
 
 **Reading:** The University of Rhode Island has free access to a great resource for this course, and in fact many of our examples are based upon this: “ArcPy and ArcGIS – Geospatial Analysis with Python” by Silas Toms. Click [here](https://uri-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01URI_ALMA51174200860002396&context=L&vid=01URI&lang=en_US&search_scope=Books_More&adaptor=Local%20Search%20Engine&tab=default_tab&query=any,contains,ArcPy%20and%20ArcGIS%20–%20Geospatial%20Analysis%20with%20Python&sortby=rank&offset=0) to go to the book through the URI Library website.
 
+**Course goals:**
+* Expose you to the Python programming language and provide opportunity to practice using basic functionality.
+* Introduce arcpy and how this can be used to automate and extend geoprocessing tasks.
+* Provide you with the skills needed to successfully develop Python tools that can be used, not only by yourself, but external users.
+* Provide practice in the use of Github as supplementary tool for code dissemination and storage.
+
+**Course Credit:** NRS-568 is a three-credit computer lab course and assignments to work towards these credits by my enrolled students will be assessed accordingly (see the [Assignments folder](/Assignments/)).
+
 ```python
 import arcpy
 arcpy.AddWarning(r"It's not going to be easy, but..")
@@ -17,16 +25,15 @@ arcpy.AddMessage(r"Let's get started!")
 
 ### Course schedule
 
-
 Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Topic
 ------------ | ---------
-Jan 25 | **1. Introduction:** Overview of different assignments for this class. Set up Github accounts. **2. Interacting with Python:** The different Python environments and ways to interact with Python through ArcGIS (and not) – Python.exe, bat files, just clicking on a *.py, geoprocessing command line, PyCharm, toolboxes (*.pyt and traditional).
+Jan 25 | **1. Introduction:** Overview of different assignments for this class. Set up Github accounts. **2. Interacting with Python:** The different Python environments and ways to interact with Python through ArcGIS (and not) – Python.exe, bat files, just clicking on a *.py file, geoprocessing command line, PyCharm, toolboxes (*.pyt and traditional).
 Feb 1 |	**3. Python basics:** Commenting, import statements for packages, variables and data types (str, int, float, lists, tuples, dictionaries). Iteration using: for loops, if/elif/else statements, while statements. Code cleanliness (indentation using tabs/spaces, spotting indentation errors), Using Functions to block code. Zero-based indexing.
 Feb 8 | **4. Python modules:** Cover modules such as *os*, *sys*. Basic file and system manipulation.
 Feb 15 | **5. Arcpy module:** Present basic arcpy functionality, where can you find scripts and information, cover basic functionality. Setting environments within arcpy.
 Feb 22 |	**6. Building basic scripts:** Cover basic coding tasks, and introduce error handling, print statements and various messaging functionality.
 Mar 1 |	**7. Building your first *big* script by cheating:** Using ModelBuilder and ArcToolbox to export python scripts. Extending exported python scripts.
-Mar 8 | **8. File handling and input to arcpy:** How to interact with and code input for tools that are available through arcpy.
+Mar 8 | **8. File handling and input to arcpy:** How to interact with and code input for tools that are available through arcpy. Set *Tool Challenge assignment*.
 Mar 15 | *Spring break, no classes*
 Mar 22 | **9. Functions:** Avoid repeating code using functions.
 Mar 29 | **10. Cursors and Table Manipulation:** Selecting, searching, iterating through and updating tabular data.
