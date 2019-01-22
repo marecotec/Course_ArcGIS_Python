@@ -2,7 +2,7 @@
 
 NRS-568 is a three-credit computer lab course and assignments to work towards these credits will be assessed accordingly.
 
-### Weighting
+### Weighting
 
 Assignment | Weighting | Set | Due
 ---------- | --------- | --- | ---
