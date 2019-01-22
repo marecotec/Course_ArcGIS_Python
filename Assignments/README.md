@@ -2,16 +2,18 @@
 
 NRS-568 is a three-credit computer lab course and assignments to work towards these credits will be assessed accordingly.
 
+All assignments should be submitted through our Github Classroom site -
+
 ### Weighting
 
 Assignment | Weighting | Set | Due
 ---------- | --------- | --- | ---
 Attendance | 10% | | End of term
-Coding challenges | 40% | Each week |Each week
+Coding challenges | 40% | Each week | Each week
 Tool challenge | 25% | Session before Spring Break | Session after Spring Break
 Python Toolbox | 25% | Session after Spring Break | End of term
 
-**1. Attendance and participation:** Attendance is critical to your success in this class. To earn full credit, you must attend and participate in each and every class. If you have an emergency, or you are ill, you are expected to contact the instructor in advance of class. This particularly pertains to flu-like symptoms, so if you do exhibit signs of flu, contact the instructor and stay home to minimize transference of the virus. Unexcused absences will result in a lower course grade.
+**1. Attendance and participation:** Attendance is critical to your success in this class. To earn full credit, you must attend and participate in each and every class. If you have an emergency, you are ill, or you have an absence covered under the University policies (i.e. Holy Days, University Sanctioned Events) you are expected to contact the instructor in advance of class. For illness, this particularly pertains to flu-like symptoms, so if you do exhibit signs of flu, contact the instructor and stay home to minimize transference of the virus. Unexcused absences will result in a lower course grade.
 
 **2. Coding challenges:** Each week we will undertake a coding challenge based upon covered content. These challenges will be achievable in a relatively short time (my expectation is an hour or two of work) and submitted for code review through Github Classroom. The purpose of this assignment is to give you direct and guided practice with Python and arcpy. Grading and feedback will center around, cleanliness of code, functionality and appropriate use of comments.
 
