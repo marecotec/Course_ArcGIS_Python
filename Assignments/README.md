@@ -2,7 +2,7 @@
 
 NRS-568 is a three-credit computer lab course and assignments to work towards these credits will be assessed accordingly.
 
-All assignments should be submitted through our Github Classroom site -
+All assignments should be submitted through our Github Classroom site. You will receive an invitation to this before the first piece of work is set.
 
 ### Weighting
 
@@ -19,4 +19,4 @@ Python Toolbox | 25% | Session after Spring Break | End of term
 
 **3. Tool challenge:** In this assignment, you are instructed to produce a small tool that takes advantage of arcpy and Python. You will need to provide example data, and the code should run on all PC's. The tool needs to manipulate a dataset across three different processes, for example, extracting, modifying and exporting data. The exact workflow is entirely up to yourself. You are expected to take 3-4 hours on this coding assignment, and you should deposit your code and example files within a Github repository for feedback and grading. The criteria are: cleanliness of code, functionality, appropriate use of documentation and depth of processing operation.
 
-**4. Python Toolbox:** In your final assignment for this course, you should create a Python Toolbox that contains a minimum of three simple tools for undertaking geoprocessing and file management operations. These tools can be discrete or part of a larger workflow. However, the caveats are that you should create a "single file" toolbox (no includes, or external file tools) and not exceed 2000 lines of code in it's entirety. You should document the toolbox using Github README.md, and provide example data for running each of your tools. Grading and feedback will focus on: 1) Does the toolbox install and the tools run successfully?, 2) cleanliness of code, 3) functionality and depth of processing operation, and 4) appropriate use of documentation.
+**4. Python Toolbox:** In your final assignment for this course, you should create a Python Toolbox that contains a minimum of three simple tools for undertaking geoprocessing and file management operations. These tools can be discrete or part of a larger workflow. However, the caveats are that you should create a "single file" toolbox (no includes, or external file tools) and not exceed 2000 lines of code in its entirety. You should document the toolbox using Github README.md, and provide example data for running each of your tools. Grading and feedback will focus on: 1) Does the toolbox install and the tools run successfully?, 2) cleanliness of code, 3) functionality and depth of processing operation, and 4) appropriate use of documentation.
