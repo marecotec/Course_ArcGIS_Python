@@ -10,10 +10,7 @@ We will cover:
 * Toolboxes (*.pyt)
 * PyCharm
 
-## YouTube video
-
 ## Worksheet
 
-#### Where and what is Python and how does it interact with ArcGIS?
-
-There are several ways to determine the version of Python that ArcGIS is using, and there are several issues that can crop up when building advanced programs that interface with Python and arcpy.
+## YouTube video
+[![YouTube Video Link](/images/2_Interacting_PF.png?raw=true)](https://www.youtube.com/watch?v=yePiVxoUhdc "YouTube Video Link")
