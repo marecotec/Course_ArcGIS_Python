@@ -12,5 +12,7 @@ We will cover:
 
 ## Worksheet
 
+See 2_Interacting_Worksheet in either docx or PDF formats in the file list above.
+
 ## YouTube video
 [![YouTube Video Link](/images/2_Interacting_PF.png?raw=true)](https://www.youtube.com/watch?v=yePiVxoUhdc "YouTube Video Link")
