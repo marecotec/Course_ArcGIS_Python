@@ -2,7 +2,7 @@
 
 NRS-568 is a three-credit computer lab course and assignments to work towards these credits will be assessed accordingly.
 
-All assignments should be submitted through our Github Classroom site. You will receive an invitation to this before the first piece of work is set.
+For each assignment, please see our Classroom [site](https://github.com/Course-ArcGIS-Python-Master), which will allow you to upload your repositories as submissions and download starter code. All assignments must be submitted through our Github Classroom site. You will receive an invitation to this before the first piece of work is set.
 
 ### Weighting
 
