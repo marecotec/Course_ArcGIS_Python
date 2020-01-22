@@ -1,8 +1,6 @@
 # Assignments
 
-This is a three-credit computer lab course and assignments to work towards these credits will be assessed accordingly.
-
-For each assignment, please see our Classroom [site](https://github.com/Course-ArcGIS-Python-Master), which will allow you to upload your repositories as submissions and download starter code. All assignments must be submitted through our Github Classroom site. You will receive an invitation to this before the first piece of work is set.
+For each assignment, you will submit these to your Github account, which will allow you to upload your repositories as submissions, and will contribute to your Github Portfolio.
 
 ### Weighting
 
@@ -12,7 +10,7 @@ Attendance | 10% | | End of term
 Quizzes pre-class online coding challenges | 20% | Each week | Each week
 Midterm tool challenge | 25% | Session before Spring Break | Session after Spring Break
 Python Toolbox that includes several tools that have been coded and documented by yourself and released as a Github repository | 25% | Session after Spring Break | End of term
-Github account portfolio | 20% | Session before Spring Break | End of term
+Github account portfolio | 20% | Beginning of term | End of term
 
 **1. Attendance and participation:** Attendance is critical to your success in this class. To earn full credit, you must attend and participate in each and every class. If you have an emergency, you are ill, or you have an absence covered under the University policies (i.e. Holy Days, University Sanctioned Events) you are expected to contact the instructor in advance of class. For illness, this particularly pertains to flu-like symptoms, so if you do exhibit signs of flu, contact the instructor and stay home to minimize transference of the virus. Unexcused absences will result in a lower course grade.
 
