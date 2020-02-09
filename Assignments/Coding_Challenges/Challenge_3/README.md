@@ -1,6 +1,6 @@
 # Coding Challenge 3
 
-For this coding challenge, for each item below produce a Python file that executes addresses each task (total of 5 files in your repo):
+For this coding challenge, for each item below produce a Python file that executes addresses each task (total of 5 files  (3 py, 1 bat, 1 csv, in your repo):
 
 ### 1. Simple directory tree
 
