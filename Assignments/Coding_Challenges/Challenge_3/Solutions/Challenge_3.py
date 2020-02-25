@@ -84,10 +84,30 @@ print "Summer = " + str(sum(summer_season_list) / len(summer_season_list))
 print "Autumn = " + str(sum(autumn_season_list) / len(autumn_season_list))
 print "Winter = " + str(sum(winter_season_list) / len(winter_season_list))
 
+# Anomaly Calculation
+
+overall_average = sum(value_list) / len(value_list)
+anomaly_dict = {}
+
+with open("co2-ppm-daily.csv") as co2:
+    csv_reader = csv.reader(co2, delimiter=',')
+    headerline = co2.next()  # I use this to skip the header line
+
+    for row in csv_reader:
+        year_co2, month_co2, day = row[0].split("-")
+        anomaly_dict[year_co2] = float(row[1]) - overall_average
+
+
 # Bonus present plot graph of annual averages
 import matplotlib.pylab as plt
 lists = sorted(year_value_dict.items()) # sorted by key, return a list of tuples
 x, y = zip(*lists) # unpack a list of pairs into two tuples
 plt.plot(x, y)
+plt.show()
+
+lists = sorted(anomaly_dict.items()) # sorted by key, return a list of tuples
+x, y = zip(*lists) # unpack a list of pairs into two tuples
+plt.plot(x, y)
+plt.axhline(linewidth=2, color='black')
 plt.show()
 
