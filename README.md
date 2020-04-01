@@ -37,22 +37,22 @@ arcpy.AddMessage(r"Let's get started!")
 
 ### Course schedule
 
-Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Topic | Preparation |
+Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Topic | Assignments |
 ------------ | ------------ | ------------ |
 Week 1 | **Lecture:** Introduction, overview of different assignments for this class and modes of teaching. **Laboratory:** Set up Github accounts. The different Python environments and ways to interact with Python through ArcGIS (and not) – Python.exe, bat files, just clicking on a *.py, geoprocessing command line, PyCharm, toolboxes (*.pyt and traditional). | |
 Week 2 | **Lecture:** Introduction to Python basics. **Laboratory:** Commenting, import statements for packages, variables and data types (str, int, float, lists, tuples, dictionaries). Iteration using for loops, if/elif/else statements, while statements. Code cleanliness (indentation using tabs/spaces, spotting indentation errors), Using Functions to block code. Zero-based indexing. | Coding challenge 1 |
 Week 3 | **Lecture:** Introduction to Python modules. **Laboratory:** os, sys. Basic file and system manipulation. arcpy. Present some arcpy functionality, where can you find scripts, basic resources. | Coding challenge 2 |
-Week 4 | **Lecture:** Building basic scripts. **Laboratory:** Cover basic coding tasks, and introduce error handling, print statements and various messaging functionality. | Coding challenge 3 |
-Week 5 | **Lecture:** Building your first script by cheating. **Laboratory:** Using ModelBuilder and ArcToolbox to export python scripts. Extending exported python scripts. | Coding challenge 4 |
-Week 6 | **Lecture:** Environments, functions and file handling. **Laboratory:** Setting environments within arcpy. How to interact with and code input for tools that are available through arcpy. Avoid repeating code using functions. | Coding challenge 5 |
-Week 7 | **Lecture:** Introduction to Cursors. **Laboratory:** Selecting, searching, updating data using arcpy functions, and non-arcpy alternatives. | Coding challenge 6 |
+Week 4 | **Lecture:** Introduction to Python modules. **Laboratory:** os, sys. Basic file and system manipulation. arcpy. Present some arcpy functionality, where can you find scripts, basic resources. | Coding challenge 3 |
+Week 5 | **Lecture:** Building basic scripts. **Laboratory:** Cover basic coding tasks, and introduce error handling, print statements and various messaging functionality. | Coding challenge 4 |
+Week 6 | **Lecture:** Building your first script by cheating. **Laboratory:** Using ModelBuilder and ArcToolbox to export python scripts. Extending exported python scripts. | Coding challenge 5 |
+Week 7 | **Lecture:** Environments, functions and file handling. **Laboratory:** Setting environments within arcpy. How to interact with and code input for tools that are available through arcpy. Avoid repeating code using functions. | Mid-term Assignment Set |
 Week 8 | Spring Break - No Classes |  |
-Week 9 | **Lecture:** Geometry objects and raster manipulation. **Laboratory:** Creating geometry objects, points, lines and polygons. Creating and working with raster datasets. | Coding challenge 7 |
-Week 10 | **Lecture:** Spatial analyst and other extensions in Python. **Laboratory:** Practice using various ArcGIS extensions through arcpy. Check out/in licenses, advanced functionality. | Coding challenge 8 |
-Week 11 | **Lecture:** Interacting with ArcGIS Desktop from code. **Laboratory:** Techniques to manipulate the desktop environment. | Coding challenge 9 |
-Week 12 | **Lecture:** Effective Python Toolboxes. **Laboratory:** Pythonizing your toolboxes to provide usable interactive scripts all within a single python file. | Coding challenge 10 |
-Week 13 | **Lecture:** Designing scripts for others. **Laboratory:** Building scripts that can be used by others, open source licenses to protect you and your code and dissemination through Github. |  |
- Week 14 | **Lecture:** Code review and end of class discussion. |  |
+Week 9 | **Lecture:** Introduction to Cursors. **Laboratory:** Selecting, searching, updating data using arcpy functions, and non-arcpy alternatives. | Coding challenge 6 |
+Week 10 | **Lecture:** Geometry objects and raster manipulation. **Laboratory:** Creating geometry objects, points, lines and polygons. Creating and working with raster datasets. | Coding challenge 7 |
+Week 11 | **Lecture:** Spatial analyst and other extensions in Python. **Laboratory:** Practice using various ArcGIS extensions through arcpy. Check out/in licenses, advanced functionality. | Coding challenge 8 |
+Week 12 | **Lecture:** Interacting with ArcGIS Desktop from code. **Laboratory:** Techniques to manipulate the desktop environment. | Coding challenge 9 |
+Week 13 | **Lecture:** Effective Python Toolboxes. **Laboratory:** Pythonizing your toolboxes to provide usable interactive scripts all within a single python file. | Coding challenge 10 |
+Week 14 | **Lecture:** Designing scripts for others. **Laboratory:** Building scripts that can be used by others, open source licenses to protect you and your code and dissemination through Github. |  |
 
 **Additional information:**
 
