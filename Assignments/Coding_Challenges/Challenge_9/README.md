@@ -1,6 +1,6 @@
 # Coding Challenge 9
 
-In this coding challenge, your objective is to utilize the radiating lines code used in class "9_Cursors" to take an input of sites from a provided Shapefile (Site_Locations.zip), use the radiating lines code to calculate "fetch distances" for each 10 degree bearing in a manner that originated from [Davies & Johnson (2006)](https://www.sciencedirect.com/science/article/pii/S0272771406001867). Finally, clip the resulting fetch lines by the NB_Coastline.zip shapefile, and report the mean plus standard deviation of the fetch distance for each site: 9 sites, A1....C3 in meters. We don't have wind data so can't calculate the estimate as accurately as in Davies & Johnson (2006).
+In this coding challenge, your objective is to utilize the radiating lines code used in class "9_Cursors" to take an input of sites from a provided Shapefile (Site_Locations.zip), use the radiating lines code to calculate "fetch distances" for each 10 degree bearing in a manner that originated from [Davies & Johnson (2006)](https://www.sciencedirect.com/science/article/pii/S0272771406001867). Finally, clip the resulting fetch lines by the NB_Coastline.zip shapefile, and report the mean plus standard deviation of the fetch distance for each site: 9 sites, A1....C3 in meters. We don't have wind data so can't calculate the estimate as accurately as in Davies & Johnson (2006). Note that I have provided a walthrough guide of the general steps you need to take to calculate these values in the PowerPoint file.
 
 
 ```python
