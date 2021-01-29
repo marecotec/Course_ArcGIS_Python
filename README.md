@@ -1,5 +1,5 @@
 # Geographical Information Systems in Python
-### University of Rhode Island (Spring 2020)
+### University of Rhode Island (Spring 2021)
 
 ![Banner Image](/images/banner.png?raw=true)
 
@@ -46,7 +46,6 @@ Week 4 | **Lecture:** Introduction to Python modules. **Laboratory:** os, sys. B
 Week 5 | **Lecture:** Building basic scripts. **Laboratory:** Cover basic coding tasks, and introduce error handling, print statements and various messaging functionality. | Coding challenge 4 |
 Week 6 | **Lecture:** Building your first script by cheating. **Laboratory:** Using ModelBuilder and ArcToolbox to export python scripts. Extending exported python scripts. | Coding challenge 5 |
 Week 7 | **Lecture:** Environments, functions and file handling. **Laboratory:** Setting environments within arcpy. How to interact with and code input for tools that are available through arcpy. Avoid repeating code using functions. | Mid-term Assignment Set |
-Week 8 | Spring Break - No Classes |  |
 Week 9 | **Lecture:** Introduction to Cursors. **Laboratory:** Selecting, searching, updating data using arcpy functions, and non-arcpy alternatives. | Coding challenge 6 |
 Week 10 | **Lecture:** Geometry objects and raster manipulation. **Laboratory:** Creating geometry objects, points, lines and polygons. Creating and working with raster datasets. | Coding challenge 7 |
 Week 11 | **Lecture:** Spatial analyst and other extensions in Python. **Laboratory:** Practice using various ArcGIS extensions through arcpy. Check out/in licenses, advanced functionality. | Coding challenge 8 |
