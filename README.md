@@ -1,4 +1,4 @@
-# Geographical Information Systems in Python
+Geographical Information Systems in Python
 ### University of Rhode Island (Spring 2021)
 
 ![Banner Image](/images/banner.png?raw=true)
