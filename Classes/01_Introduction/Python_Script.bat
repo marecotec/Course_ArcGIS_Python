@@ -1,3 +1,3 @@
-C:\Python27\ArcGIS10.6\python.exe Python_Script.py
+"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" Python_Script.py
 
 pause
