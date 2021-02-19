@@ -23,7 +23,7 @@ with open("Step_4.csv") as population_csv:
 
     for row in csv_reader:
         if line_count == 0:
-            print "Column names are: " + str(row)
+            print("Column names are: " + str(row))
             line_count += 1
         line_count += 1
 
@@ -36,8 +36,8 @@ with open("Step_4.csv") as population_csv:
     total = 0
     for row in csv.reader(population_csv):
         total += float(row[3]) #3 = 4th column, in this case, population, remember Python uses zero indexing
-    print format(total, 'f') # format prints as float
-    print total  # without we print as engineering notation
+    print(format(total, 'f')) # format prints as float
+    print(total) # without we print as engineering notation
     # Now look at the data, 3 hundred billion? Ah, we have multiple years..
 
 # Task - Using Step_4.csv, complete the following, 1) Make a list of the years and the countries in the dataset,

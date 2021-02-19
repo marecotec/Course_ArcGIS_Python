@@ -8,10 +8,10 @@
 import sys
 
 # For example, we can find out the version of the software:
-print sys.version
+print(sys.version)
 
 # Locate our Python Executable path
-print sys.executable
+print(sys.executable)
 
 # Read and write to the interpreter directly (similar to print function, but a bit more powerful)
 sys.stderr.write('This is stderr text\n')
@@ -20,8 +20,8 @@ sys.stdout.write('This is stdout text\n')
 
 # Perhaps the most important function is sys.argv, which will allow you to add commands to the interpreter
 # from an external file. I use this when executing my Python code from a *.bat file, as you can write:
-# C:\Python27\ArcGIS10.5\python.exe Step_2.py ARGUMENT1 ARUGMENT2 Try executing the Step_2.bat file that I have
-# provided
+# "C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" Step_2.py ARGUMENT1 ARUGMENT2
+# Try executing the Step_2.bat file that I have provided
 
 def main(arg):
     print("My argument: " + str(arg))

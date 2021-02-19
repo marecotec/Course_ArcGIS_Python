@@ -14,14 +14,14 @@ os.system("dir") #DIR is a Windows command to list contents of current directory
 # delete it and check again.
 
 # Part b - Other interesting functions you can use within Python
-path = r"test_dir"
+path = "test_dir"
 
 # Create a directory
 os.mkdir(path)
 
 # Return a list of the entries in the directory given by path.
 list = os.listdir(path)
-print list
+print(list)
 
 # Rename the file or directory src to dst.
 os.rename("test_dir", "test_dir2")
