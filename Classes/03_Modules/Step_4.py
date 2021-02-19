@@ -32,7 +32,7 @@ print("Processed " + str(line_count) + " lines.")
 # We can do some basic tasks, for example, let's sum the "Population" column
 
 with open("Step_4.csv") as population_csv:
-    headerline = population_csv.next()
+    next(population_csv) #skip first line
     total = 0
     for row in csv.reader(population_csv):
         total += float(row[3]) #3 = 4th column, in this case, population, remember Python uses zero indexing
@@ -44,5 +44,3 @@ with open("Step_4.csv") as population_csv:
 # how many years and countries are there? 2) Calculate the global population for every year in the dataset.
 # 3) Split the global dataset into a file for each country, with the filename the name of the country, in a new
 # directory using only Python
-
-
