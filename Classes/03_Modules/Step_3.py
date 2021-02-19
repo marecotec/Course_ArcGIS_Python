@@ -38,7 +38,7 @@ file = open("testfile.txt", "r")
 file_contents = file.readlines()
 counter = 1
 for i in file_contents:
-    print str(counter) + ": " + i.rstrip() #.rstrip() removes new line characters i.e. \n
+    print(str(counter) + ": " + i.rstrip()) #.rstrip() removes new line characters i.e. \n
     counter = counter + 1
 file.close()
 
