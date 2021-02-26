@@ -9,20 +9,20 @@
 
 #  Below is example code that interrogates a shapefile and returns the type of data stored within it:
 import arcpy
-desc = arcpy.Describe("D:\Python-Class\Class 5\Places_Been.shp")
+desc = arcpy.Describe(r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\Places_Been.shp")
 
 # Describe returns a "Describe" object, which basically has multiple properties that we can query.
-print desc # Returns meaningless information - geoprocessing describe data object...
-print desc.shapeType # Providing you supply the same shapefile as me, you will get "point", for more info
+print(desc) # Returns meaningless information - geoprocessing describe data object...
+print(desc.shapeType) # Providing you supply the same shapefile as me, you will get "point", for more info
 # see this link: http://pro.arcgis.com/en/pro-app/arcpy/functions/featureclass-properties.htm
 
-print desc.extent
+print(desc.extent)
 # Print a more accessible spatialReference output (this uses string substitution notation:
 print("Extent:\n  XMin: {0},\n XMax: {1},\n YMin: {2},\n YMax: {3}".format(desc.extent.XMin, desc.extent.XMax, desc.extent.YMin, desc.extent.YMax))
 
-print desc.spatialReference # Returns meaningless information - geoprocessing spatial reference object, we need to go deeper
-print desc.spatialReference.name
-print desc.spatialReference.type
+print(desc.spatialReference) # Returns meaningless information - geoprocessing spatial reference object, we need to go deeper
+print(desc.spatialReference.name)
+print(desc.spatialReference.type)
 
 # Task 1 - Using the raster dataset supplied - 0320001450.JP2, extract the following information (Hint you may
 # need to use r"file path" due to the \ in the filename), using substitution notation to format this nicely e.g.
@@ -34,7 +34,7 @@ print desc.spatialReference.type
 # 5. Get number of bands (hint: http://pro.arcgis.com/en/pro-app/arcpy/functions/raster-dataset-properties.htm)
 
 #First Describe image
-desc_image = arcpy.Describe(r"D:\Python-Class\Class 5\0320001450.JP2")
+desc_image = arcpy.Describe(r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\0320001450.JP2")
 # 1. Dataset Type
 print("Dataset Type: %s" % desc_image.datasetType)
 # 2. Spatial Reference Name and Type.

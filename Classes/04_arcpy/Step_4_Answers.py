@@ -30,8 +30,8 @@ arcpy.AddMessage("The passed-down current workspace is: %s" % arcpy.env.workspac
 arcpy.AddMessage("The passed-down scratch workspace is: %s" % arcpy.env.scratchWorkspace)
 
 # Set a new workspace, overriding the passed-down workspace
-arcpy.env.workspace = "D:\Python-Class"
-arcpy.env.scratchWorkspace = "D:\Python-Class"
+arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy"
+arcpy.env.scratchWorkspace = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy"
 arcpy.AddMessage("The new current workspace is: %s" % arcpy.env.workspace)
 arcpy.AddMessage("The new scratch workspace is: %s" % arcpy.env.scratchWorkspace)
 

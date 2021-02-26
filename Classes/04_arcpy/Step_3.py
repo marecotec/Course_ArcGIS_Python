@@ -16,9 +16,9 @@ Buffer_analysis(in_features, out_feature_class, buffer_distance_or_field,
                 {line_side}, {line_end_type}, {dissolve_option}, {dissolve_field}, {method})
 # Optional commands are shown by squiggly brackets {}.
 
-# Here is an example buffer analysis broken out into variables:
-in_features = "E:/Data/Roads.shp"
-out_feature_class = "E:/Data/Roads_Buffer.shp"
+# Here is an example buffer analysis broken out into variables, roads does not exist:
+in_features = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\Roads.shp"
+out_feature_class = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\Roads_Buffer.shp"
 buffer_distance_or_field = "1 meter"
 line_side = "#"
 line_end_type = "#"
