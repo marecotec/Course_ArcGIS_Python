@@ -6,4 +6,4 @@ Set up the tool to run in Python, add some useful comments, and importantly, pro
 
 My only requirements are:
 1. Comment your code well.
-2. Ensure that the code will run with only a single change to a single variable (i.e. a base folder location).
+2. Ensure that the code will run on my machine with only a single change to a single variable (i.e. a base folder location).
