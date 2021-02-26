@@ -9,7 +9,7 @@
 
 #  Below is example code that interrogates a shapefile and returns the type of data stored within it:
 import arcpy
-desc = arcpy.Describe("D:\Python-Class\Class 5\Places_Been.shp")
+desc = arcpy.Describe(r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\Places_Been.shp")
 
 # Describe returns a "Describe" object, which basically has multiple properties that we can query.
 print(desc) # Returns meaningless information - geoprocessing describe data object...

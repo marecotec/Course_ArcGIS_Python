@@ -30,8 +30,8 @@ import arcpy
 
 # Tasks - Using the files provided in Step_3_data.zip, under take the following:
 ##### 1. Execute the Buffer tool on Places_Been.shp, with a buffer of 100 meters, you will probably need to use method = GEODESIC
-in_features = "D:\Python-Class\Class 5\Places_Been.shp"
-out_feature_class = "D:\Python-Class\Class 5\Places_Been_Output.shp"
+in_features = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\Places_Been.shp"
+out_feature_class = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\Places_Been_Output.shp"
 buffer_distance_or_field = "100 meter"
 line_side = "#"
 line_end_type = "#"
@@ -44,8 +44,8 @@ arcpy.Buffer_analysis(in_features, out_feature_class, buffer_distance_or_field, 
 ##### On the second run, set line_side to "RIGHT", and line_end_type to "FLAT". Compare the differences in the GIS.
 
 # Run 1
-in_features = "D:\Python-Class\Class 5\URI_Campus_Roads_OSM.shp"
-out_feature_class = "D:\Python-Class\Class 5\URI_Campus_Roads_OSM_Output_1.shp"
+in_features = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\URI_Campus_Roads_OSM.shp"
+out_feature_class = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\URI_Campus_Roads_OSM_Output_1.shp"
 buffer_distance_or_field = "100 meter"
 line_side = "#"
 line_end_type = "#"
@@ -55,8 +55,8 @@ method = "GEODESIC"
 arcpy.Buffer_analysis(in_features, out_feature_class, buffer_distance_or_field, line_side, line_end_type, dissolve_option, dissolve_field, method)
 
 # Run 2
-in_features = "D:\Python-Class\Class 5\URI_Campus_Roads_OSM.shp"
-out_feature_class = "D:\Python-Class\Class 5\URI_Campus_Roads_OSM_Output_2.shp"
+in_features = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\URI_Campus_Roads_OSM.shp"
+out_feature_class = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy\DataFolder_Step_3_data\URI_Campus_Roads_OSM_Output_2.shp"
 buffer_distance_or_field = "100 meter"
 line_side = "RIGHT"
 line_end_type = "FLAT"
