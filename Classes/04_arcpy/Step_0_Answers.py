@@ -3,48 +3,31 @@
 # Step 0 - Practice tasks before we start.
 #####
 
-# Task a: Express the following sequences as lists:
+# Task a: Express the following sequence as lists:
 
-##### Create an integer list 1, 2, 3, 4, 5, 6, 7, call it "intList"
+##### Create a list of floats 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, call it "floatList", print it.
+floatList = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0]
 
-intList = [1, 2, 3, 4, 5, 6, 7]
+##### Create a  list of individual words using the sentence: "The lake is a long way from here" and
+##### call it "strList", print it. I want you to "split" the string at white space.
+string = "The lake is a long way from here"
 
-##### Create a string list using the sentence: "daYS lAtEr EvEryoNe waS buSy SO I WenT To THE MOVie aLOne" and call it "strList"
+strList = ["The", "lake", "is", "a", "long", "way", "from", "here"]
+strList = string.split(" ")
 
-strList = ["dAYS", "lAtEr", "EvEryoNe", "waS", "buSy", "SO", "I", "WenT", "To", "THE", "MOVie", "aLOne"]
+print(strList)
+
 
 # Task b: Using a for loop, do the following:
 
-##### Sum the values of intList and print result (28), yes you can use: print sum(intList), call it strValue.
+##### Sum the values of floatList and print result (28.0) using a for loop, yes you can use: print(sum(floatList)),
+##### call it floatValue, print it
 
-strValue = 0
-for value in intList:
-    strValue = strValue + value
-print strValue
+print(sum(floatList))
 
-##### Go through each word of strList, and create a sentence (called strSentence) where each word is in lower case ( i.e.*.lower() )
+result = 0
 
-strSentence = ""
-for word in strList:
-    strSentence = strSentence + " " + word.lower()
-print strSentence
+for f in floatList:
+    result += f
+print(result)
 
-##### Concatenate (join) the result of strValue and strSentence:
-
-print str(strValue) + strSentence
-
-# Task c: Use if to check status:
-
-##### Use if/else to ask what type of data your intList is, do the sum if int and print the result Ensure you
-##### have an else that will catch a failure (i.e. if type does not equal int print "Input data not integer").
-##### Hint, to test to see if all items in your list are integers, you need to use this: all(isinstance(item, int) for item in intList)
-if all(isinstance(item, int) for item in intList):
-    print sum(intList)
-else:
-    print "Input data not integer"
-
-##### Using the same code, run your strList, this should exit appropriately.
-if all(isinstance(item, int) for item in strList):
-    print sum(intList)
-else:
-    print "Input data not integer"

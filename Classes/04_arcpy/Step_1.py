@@ -24,16 +24,16 @@ ba() # As we imported the tool specifically as ba, we can refer to it as ba.
 
 # Part a - Time to load
 
-# ##### Below, I want to show you how much faster it is to refer to a specific tool using
-# the time package, note there is no real benefit:
+# ##### Below, I want to show you the load speed for a specific tool using
+# the time package, note there is no real benefit as arcpy is slow:
 
 # import time
 # ba_start_time = time.time()
 # from arcpy import Buffer_analysis as ba
-# print 'It took', time.time()-ba_start_time, 'seconds, to load ba.'
+# print('It took', time.time()-ba_start_time, 'seconds, to load ba.')
 
 # import time
 # arcpy_start_time = time.time()
 # import arcpy
-# print 'It took', time.time()-arcpy_start_time, 'seconds, to load arcpy.'
+# print('It took', time.time()-arcpy_start_time, 'seconds, to load arcpy.')
 
