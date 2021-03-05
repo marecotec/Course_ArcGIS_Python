@@ -1,6 +1,6 @@
-# Midterm Tool Challenge (due Friday 20th March 17.30pm)
+# Midterm Tool Challenge (due Friday 19th March 17.30pm)
 
-In this assignment, you are instructed to produce a small tool that takes advantage of arcpy and Python. You will need to provide example data, and the code should run on all PC's. The tool needs to manipulate a dataset across three different processes, for example, extracting, modifying and exporting data. The exact workflow is entirely up to yourself. You are expected to take 3-4 hours on this coding assignment, and you should deposit your code and example files within a Github repository for feedback and grading.
+In this assignment, you are instructed to produce a small script tool that takes advantage of arcpy and Python. You will need to provide example data, and the code should run on all PC's. The tool needs to manipulate a dataset across three different processes, for example, extracting, modifying and exporting data. The exact workflow is entirely up to yourself. You are expected to take 3-4 hours on this coding assignment, and you should deposit your code and example files within a Github repository for feedback and grading.
 
 The criteria are:
 * Cleanliness of code (10 points)
