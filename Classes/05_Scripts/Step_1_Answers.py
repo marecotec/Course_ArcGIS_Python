@@ -39,7 +39,7 @@
 
 import arcpy
 # Set your workspace to the directory where you are storing your files
-arcpy.env.workspace = r"Z:\Andy's Documents\Teaching and students\URI\NRS - GIS Python Course\Github\Course_ArcGIS_Python\Classes\6_Scripts"
+arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\05_Scripts"
 
 in_Table = r"Step_1_Deep_Coral.csv"
 x_coords = "decimalLongitude"
@@ -62,12 +62,12 @@ print(arcpy.GetCount_management(out_Layer))
 arcpy.CopyFeatures_management(lyr, saved_Layer)
 
 if arcpy.Exists(saved_Layer):
-    print "Created file successfully!"
+    print("Created file successfully!")
 
 ##### 3. Check the correct coordinate system has been applied (Hint: see last week!)
 
 desc = arcpy.Describe(saved_Layer)
-print desc.spatialReference.name
+print(desc.spatialReference.name)
 
 ##### 4. Visualize the file in ArcMap.
 

@@ -9,7 +9,7 @@
 
 import arcpy
 # Set your workspace to the directory where you are storing your files
-arcpy.env.workspace = r"Z:\6_Scripts"
+arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\05_Scripts"
 
 in_Table = r"Step_1_Lionfish.csv"
 x_coords = "X"
@@ -30,16 +30,18 @@ print(arcpy.GetCount_management(out_Layer))
 arcpy.CopyFeatures_management(lyr, saved_Layer)
 
 if arcpy.Exists(saved_Layer):
-    print "Created file successfully!"
+    print("Created file successfully!")
 
 
-# Tasks - Using the file provided "Step_1_Deep_Coral.csv", undertake the following: Hint: spatial reference is WGS84.
+# Tasks - Using the file provided "Step_1_Deep_Coral.csv", undertake the following: Hint: spatial
+# reference is the same as above, i.e. WGS 1984.
 
 ##### 1. Convert the file to a shapefile.
 
-##### 2. Count the number of records in the file.
+##### 2. Print the count of the number of records in the file. (Hint: see above!)
+# https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/get-count.htm
 
 ##### 3. Check the correct coordinate system has been applied (Hint: see last week!)
 
-##### 4. Visualize the file in ArcMap.
+##### 4. Visualize the file in ArcPro by dragging it into the program.
 
