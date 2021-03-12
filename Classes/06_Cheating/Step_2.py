@@ -23,16 +23,25 @@ import arcpy
 
 
 
+
+
+
+
 # Task 2 -  Now it is relatively easy to copy this and change the file name in order to run it on the Winter_2014 data
 # but we are not going to do that, instead, we can going to use Python to do this for us from a directory name. Below,
 # complete the code that I have provided.
 
-arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2014"
-listRasters = arcpy.ListRasters("*", "TIF")
-print(listRasters)
-# Remove the BQA.tif file from the list, replace ****** with the correct string.
-listRasters = [x for x in listRasters if "******" not in x]
-print(listRasters)
+# arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2014"
+# listRasters = arcpy.ListRasters("*", "TIF")
+# print(listRasters)
+# # Remove the BQA.tif file from the list, replace ****** with the correct string.
+# listRasters = [x for x in listRasters if "BQA" not in x]
+# print(listRasters)
+# arcpy.management.CompositeBands(listRasters,
+#                                 r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2014_Composite.tif")
+
+
+
 
 # Now edit the arcpy.CompositeBands_Management tool to run the Winter 2014 data, hint, you can provide the in_rasters
 # argument as a list.
@@ -46,15 +55,12 @@ print(listRasters)
 
 import os, arcpy
 listYears = ["2013", "2014", "2015", "2016", "2017", "2018", "2019"]
-outputDirectory = "D:/Python-Class/Class7/WinterComposites"
+outputDirectory = r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Test"
 if not os.path.exists(outputDirectory):
     os.mkdir(outputDirectory)
 
 # Consider what you want to do before you start. 1) for loop through listYears, 2) set your workspace to the correct
 # year, 3) arcpy.ListRasters, 4) remove BQA.tif, 5) composite bands into a known location.
-
-
-
 
 
 
