@@ -20,38 +20,38 @@
 
 import arcpy
 
-arcpy.CompositeBands_management(in_rasters="D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B1.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B10.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B11.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B2.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B3.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B4.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B5.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B6.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B7.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B8.tif;"
-                                           "D:/Python-Class/Class7/Winter_2013/LC08_L1TP_012031_20131212_20170307_01_T1_B9.tif",
-                                out_raster="D:/Python-Class/Class7/winter13")
+arcpy.CompositeBands_management(in_rasters=r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B1.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B10.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B11.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B2.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B3.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B4.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B5.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B6.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B7.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B8.tif;"
+                                           r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2013\LC08_L1TP_012031_20131212_20170307_01_T1_B9.tif",
+                                out_raster=r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\winter13")
 
 
 # Task 2 -  Now it is relatively easy to copy this and change the file name in order to run it on the Winter_2014 data
 # but we are not going to do that, instead, we can going to use Python to do this for us from a directory name. Below,
 # complete the code that I have provided.
 
-arcpy.env.workspace = "D:/Python-Class/Class7/Winter_2014/"
+arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2014"
 listRasters = arcpy.ListRasters("*", "TIF")
-print listRasters
+print(listRasters)
 
 # Remove the BQA.tif file from the list, replace ****** with the correct string.
 listRasters = [x for x in listRasters if "_BQA.tif" not in x]
 # listRasters = [x for x in listRasters if "******" not in x]
-print listRasters
+print(listRasters)
 
 # Now edit the arcpy.CompositeBands_Management tool to run the Winter 2014 data, hint, you can provide the in_rasters
 # argument as a list.
-print "Compositing Bands... "
+print("Compositing Bands... ")
 arcpy.CompositeBands_management(in_rasters=listRasters, out_raster="D:/Python-Class/Class7/winter14.tif")
-print "Compositing Bands... Finished"
+print("Compositing Bands... Finished")
 
 # Task 3 - This is difficult, now I want you to batch run the Composite Bands script on all of our Winter_201n
 # data. Hint: use the list and starter code I have provided, and consider using a for loop to run through each year of data
@@ -69,11 +69,11 @@ if not os.path.exists(outputDirectory):
 for year in listYears:
     arcpy.env.workspace = "D:/Python-Class/Class7/Winter_" + year
     listRasters = arcpy.ListRasters("*", "TIF")
-    print "For year: " + year + ", there are: " + str(len(listRasters)) + " bands to process."
+    print("For year: " + year + ", there are: " + str(len(listRasters)) + " bands to process.")
     listRasters = [x for x in listRasters if "_BQA.tif" not in x]
-    print "Compositing Bands for " + year
+    print("Compositing Bands for " + year)
     arcpy.CompositeBands_management(in_rasters=listRasters, out_raster=os.path.join(outputDirectory, "Winter" + year + ".tif"))
-    print "Compositing Bands for " + year + " finished."
+    print("Compositing Bands for " + year + " finished.")
 
 # Task 4 - See Step_3.py for the Task!
 

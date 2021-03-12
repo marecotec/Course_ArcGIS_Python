@@ -14,7 +14,7 @@ stringFiles = "file1.asc;file2.asc;file3.asc;file4.asc;file5.asc"
 # Take this list of files (listFiles), and using a for loop, go through each file name and print it.
 
 
-# Now, using the code below, create those files, and add a small piece of text (this is my file) to each file:
+# Now, using the code below, create those files, and add a small piece of text ("this is my file") to each file:
 # file_create = open(**FILENAME**, "w")
 # file_create.write("This is my file\n")
 

@@ -32,7 +32,7 @@ arcpy.env.overwriteOutput = True  # If you get "already exists error" even when 
 
 
 # 1. Convert Step_3_Cepphus_grylle.csv to a shapefile.
-arcpy.env.workspace = r"Z:\Andy's Documents\Teaching and students\URI\NRS - GIS Python Course\Github\Course_ArcGIS_Python\Classes\6_Scripts"
+arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\05_Scripts"
 
 in_Table = r"Step_3_Cepphus_grylle.csv"
 x_coords = "lon"
@@ -49,7 +49,7 @@ print(arcpy.GetCount_management(out_Layer))
 # Save to a layer file
 arcpy.CopyFeatures_management(lyr, saved_Layer)
 if arcpy.Exists(saved_Layer):
-    print "Created file successfully!"
+    print("Created file successfully!")
 
 # 2. Extact the Extent, i.e. XMin, XMax, YMin, YMax of the generated shapefile.
 
@@ -71,10 +71,10 @@ outFeatureClass = "Step_3_Fishnet.shp"  # Name of output fishnet
 
 # Set the origin of the fishnet
 originCoordinate = str(XMin) + " " + str(YMin)  # Left bottom of our point data
-yAxisCoordinate = str(XMin) + " " + str(YMin + 1.0)  # This sets the orientation on the y-axis, so we head north
+yAxisCoordinate = str(XMin) + " " + str(YMin + 1)  # This sets the orientation on the y-axis, so we head north
 cellSizeWidth = "0.25"
 cellSizeHeight = "0.25"
-numRows =  ""  # Leave blank, as we have set cellSize
+numRows = ""  # Leave blank, as we have set cellSize
 numColumns = "" # Leave blank, as we have set cellSize
 oppositeCorner = str(XMax) + " " + str(YMax)  # i.e. max x and max y coordinate
 labels = "NO_LABELS"
@@ -86,7 +86,7 @@ arcpy.CreateFishnet_management(outFeatureClass, originCoordinate, yAxisCoordinat
                                oppositeCorner, labels, templateExtent, geometryType)
 
 if arcpy.Exists(outFeatureClass):
-    print "Created Fishnet file successfully!"
+    print("Created Fishnet file successfully!")
 
 
 # 4. Undertake a Spatial Join to join the fishnet to the observed points.
@@ -109,10 +109,10 @@ arcpy.SpatialJoin_analysis(target_features, join_features, out_feature_class,
 # arcpy.Delete_management()..
 
 if arcpy.Exists(out_feature_class):
-    print "Created Heatmap file successfully!"
-    print "Deleting intermediate files"
-    arcpy.Delete_management(target_features)
-    arcpy.Delete_management(join_features)
+    print("Created Heatmap file successfully!")
+    print("Deleting intermediate files")
+    # arcpy.Delete_management(target_features)
+    # arcpy.Delete_management(join_features)
 
 
 
