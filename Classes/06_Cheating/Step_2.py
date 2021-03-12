@@ -19,7 +19,7 @@
 # Once the tool has successfully completed, go into the Geoprocessing "History" window, right click on the
 # Completed tool, select "Copy as Python Snippet" and paste the tool output below:
 
-import arcpy
+import arcpy, os
 
 
 
@@ -37,6 +37,12 @@ import arcpy
 # # Remove the BQA.tif file from the list, replace ****** with the correct string.
 # listRasters = [x for x in listRasters if "BQA" not in x]
 # print(listRasters)
+# # We need to solve problem of sorting B1-B11 correctly
+# noExtensionlistRasters = [os.path.splitext(x)[0] for x in listRasters] # Removes file extension (tif) from each name
+# print(noExtensionlistRasters)
+# sorted_listRasters = sorted(noExtensionlistRasters, key=lambda x:int(x[42:])) #42 characters in name before hit band number LC08_L1TP_012031_20131212_20170307_01_T1_B1
+# sorted_listRasters = [x + ".tif" for x in sorted_listRasters]
+# print(sorted_listRasters)
 # arcpy.management.CompositeBands(listRasters,
 #                                 r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2014_Composite.tif")
 
