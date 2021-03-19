@@ -8,13 +8,13 @@
 list_of_file_names = ["file1.csv", "file2.csv", "file3.csv", "file4.csv", "file5.csv"]
 
 for file in list_of_file_names:
-    print file.replace(".", "_") + ".shp"
+    print(file.replace(".", "_") + ".shp")
 
 # How many files are in the list?
-print len(list_of_file_names)
+print(len(list_of_file_names))
 
 # What is the first file name in the list_of_file_names?
-print list_of_file_names[0]
+print(list_of_file_names[0])
 
 # Write the following data to a csv file called species1.csv (hint, just write it to a file):
 data = "scientificName,	decimalLongitude,	decimalLatitude\n" \

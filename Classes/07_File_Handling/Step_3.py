@@ -17,7 +17,7 @@
 
 import arcpy
 
-directory = "Z:\Andy's Documents\Teaching and students\URI\NRS - GIS Python Course\Github\Course_ArcGIS_Python\Classes\8_File_Handling"
+directory = r"C:\Data\Course_ArcGIS_Python\Classes\07_File_Handling"
 
 arcpy.env.workspace = directory
 

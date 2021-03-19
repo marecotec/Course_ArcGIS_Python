@@ -46,7 +46,7 @@ import glob
 import csv
 
 data_file = "Step_2.csv"
-input_directory = "Z:\Andy's Documents\Teaching and students\URI\NRS - GIS Python Course\Github\Course_ArcGIS_Python\Classes\8_File_Handling"
+input_directory = r"C:\Data\Course_ArcGIS_Python\Classes\07_File_Handling"
 
 if not os.path.exists(os.path.join(input_directory, "output_files")):
     os.mkdir(os.path.join(input_directory, "output_files"))
@@ -57,14 +57,15 @@ if not os.path.exists(os.path.join(input_directory, "temporary_files")):
 
 species_list = []
 with open(os.path.join(input_directory, data_file)) as species_csv:
-    header_line = species_csv.next()
+    header_line = next(species_csv)
     for row in csv.reader(species_csv):
         try: #Using try/except saves us if there is a line with no data in the file
             if row[0] not in species_list:
                 species_list.append(row[0])
         except:
             pass
-print "..There are: " + str(len(species_list)) + " species to process.."
+
+print("..There are: " + str(len(species_list)) + " species to process..")
 
 # Step 2: Lets split the files
 if len(species_list) > 1:
@@ -77,7 +78,7 @@ if len(species_list) > 1:
                         file = open(os.path.join(input_directory, "temporary_files", str(s.replace(" ", "_")) + ".csv"), "w")
                         file.write(header_line)
                         s_count = 0
-                    #make well formmated line
+                    #make well formatted line
                     file.write(",".join(row))
                     file.write("\n")
         file.close()
@@ -86,12 +87,12 @@ if len(species_list) > 1:
 # Step 3: Convert those files into Shapefiles
 os.chdir(os.path.join(input_directory, "temporary_files"))# same as env.workspace
 arcpy.env.workspace = os.path.join(input_directory, "output_files")
-species_file_list = glob.glob("*.csv")# Find all CSV files
+species_file_list = glob.glob("*.csv") # Find all CSV files
 
 count = 0
 
 for species_file in species_file_list:
-    print ".. Processing: " + str(species_file) + " by converting to shapefile format"
+    print(".. Processing: " + str(species_file) + " by converting to shapefile format")
     in_Table = species_file
     x_coords = "decimalLongitude"
     y_coords = "decimalLatitude"

@@ -46,14 +46,14 @@ if keep_temp_files == False:
 # # Step 1: Lets determine our species
 # species_list = []
 # with open(os.path.join(input_directory, data_file)) as species_csv:
-#     header_line = species_csv.next()
+#     header_line = next(species_csv)
 #     for row in csv.reader(species_csv):
 #         try: #Using try/except saves us if there is a line with no data in the file
 #             if row[0] not in species_list:
 #                 species_list.append(row[0])
 #         except:
 #             pass
-# print "..There are: " + str(len(species_list)) + " species to process.."
+# print("..There are: " + str(len(species_list)) + " species to process..")
 #
 # # Step 2: Lets split the files
 # if len(species_list) > 1:
