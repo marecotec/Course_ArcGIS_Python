@@ -24,7 +24,7 @@ print(glob.glob("*")) # no pattern match, lists all folders and files
 # Part 2 - List files using os (more painful)
 all = os.listdir(os.curdir)# files and directories
 print(all)
-files = filter(os.path.isfile, os.listdir(os.curdir))  # files only, might not find anything
+files = list(filter(os.path.isfile, os.listdir(os.curdir)))  # files only, might not find anything
 print(files)
 
 for file in os.listdir(os.curdir):
