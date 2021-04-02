@@ -9,11 +9,11 @@
 
 # Example 1
 sum = lambda in1, in2: in1 + in2
-print "Value = ", sum(10, 20)
+print("Value = ", sum(10, 20))
 
 # Exzample 2
 x = lambda a, b, c: a + b + c
-print "Value = ", x(5, 6, 2)
+print("Value = ", x(5, 6, 2))
 
 # Task 1 - Using lambda, write a function to return the cube of a number (x*x*x).
 

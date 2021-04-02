@@ -12,11 +12,11 @@ def do_math(x, y):
     value = x / y
     return value
 
-print do_math(1,2)
-print do_math(2,1)
+print(do_math(1,2))
+print(do_math(2,1))
 
-print do_math(y = 1, x = 2)
-print do_math(x = 2, y = 1)
+print(do_math(y=1, x=2))
+print(do_math(x=2, y=1))
 
 
 # As part of your function, you can alsop provide default values, which is useful if you have a commonly used
@@ -28,8 +28,8 @@ print do_math(x = 2, y = 1)
 #     return value
 #
 #
-# print do_default_math()
-# print do_default_math(2,1)
+# print(do_default_math())
+# print(do_default_math(2,1))
 
 # Task 1 - Convert the following code into a function named word_mixer() using a series of keyword arguments
 # as follows word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "andy"), of course,

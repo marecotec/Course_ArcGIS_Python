@@ -14,41 +14,36 @@
 # and provide the arguments, see the example below.
 
 
-# def do_math(x,y):
-#     """This is docstring, it can be used to explain what the function does."""
-#     value = x + y
-#     return value
-#
-#
-# print do_math(1, 2)
-# print do_math(10, 10)
+def do_math(x,y):
+    """This is docstring, it can be used to explain what the function does."""
+    value = x + y
+    return value
+
+
+print(do_math(1, 2))
+print(do_math(10, 10))
 
 # Task 1 - Comment out the above code, and then uncomment and execute the below code, analyze the error,
 # why did the code below not work?
 
-def print_me( str , str2 ):
-    """This prints a passed string into this function"""
-    print str
-    print str2
-    return
+# def print_me(str , str2):
+#     """This prints a passed string into this function"""
+#     print(str)
+#     print(str2)
+#     return
 
 
 # print_me()
 
 # Task 2 - Repair the code in the area below (Hint: do you need to edit the function or not?):
 
-print_me("Hello", "Goodbye")
+
 
 # Task 3 - Turn the code below into a function, and then run the code using the inputs: a and b (shown), and
-# # s and e
+# # i = s and j = e
 #
 i = "a"
 j = "b"
 
-def print_me2(i, j):
-    output = i + j + j + i
-    print output
-    return
-
-print_me2("a", "b")
-print_me2("s", "e")
+output = i + j + j + i
+print(output)
