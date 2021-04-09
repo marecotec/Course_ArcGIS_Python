@@ -4,7 +4,9 @@ In this coding challenge, your objective is to utilize the arcpy.da module to un
 
 Using the arcpy.da module (yes, there are other ways and better tools to do this), I want you to extract all sites that have a photo of the invasive species (Field: PHOTO) into a new Shapefile, and do some basic counts of the dataset. In summary, please addressing the following:
 
-Count how many sites have photos, and how many do not (2 numbers), print the results.
-Count how many unique species there are in the dataset, print the result.
-Generate two shapefiles, one with photos and the other without.
+1) Count how many sites have photos, and how many do not (2 numbers), print the results.
+
+2) Count how many unique species there are in the dataset, print the result.
+
+3) Generate two shapefiles, one with photos and the other without.
 
