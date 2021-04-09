@@ -52,7 +52,7 @@ with arcpy.da.SearchCursor("Step_1.csv", ['Crane', 'Time', 'X', 'Y']) as cursor:
     for row in cursor:
         crane_list.append(row[0])
 
-print crane_list
+print(crane_list)
 print(len(crane_list))
 
 crane_count={}

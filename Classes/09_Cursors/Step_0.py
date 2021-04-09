@@ -3,31 +3,16 @@
 # Step 0 - Practice tasks before we start.
 #####
 
-# Task a: Express the following sequences as lists:
+# Express these items as a list using list append (i.e. .append) and print it:
 
-##### Create a list of floats 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, call it "floatList", print it.
-floatList = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0]
-print floatList
+item1 = "woodlands.shp"
+item2 = "marshlands.shp"
+item3 = "beaches.shp"
 
-##### Create a  list of individual words using the sentence: "The lake is a long way from here" and
-##### call it "strList", print it.
+# How many files are in the list?
 
-strList = ["The", "lake", "is", "a", "long", "way", "from", "here"]
-print strList
 
-strList2 = ("The lake is a long way from here").split(" ")
-print strList2
-
-# Task b: Using a for loop, do the following:
-
-##### Sum the values of floatList and print result (28.0) using a for loop, yes you can use: print sum(floatList),
-##### call it floatValue, print it
-
-floatValue = 0.0
-
-for item in floatList:
-    floatValue = floatValue + item
-
-print floatValue
+# Take this list of files (file_list), and using a for loop, go through each file name and change
+# the file extension from shp to csv and print new_extension_file_list.
 
 

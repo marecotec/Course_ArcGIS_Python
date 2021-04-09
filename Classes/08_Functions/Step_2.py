@@ -7,16 +7,16 @@
 # second is y. But to make life a little easier, you can provide keyword arguments. For example:
 
 
-def do_math(x, y):
-    """This is docstring, it can be used to explain what the function does."""
-    value = x / y
-    return value
-
-print(do_math(1,2))
-print(do_math(2,1))
-
-print(do_math(y=1, x=2))
-print(do_math(x=2, y=1))
+# def do_math(x, y):
+#     """This is docstring, it can be used to explain what the function does."""
+#     value = x / y
+#     return value
+#
+# print(do_math(1,2))
+# print(do_math(2,1))
+#
+# print(do_math(y=1, x=2))
+# print(do_math(x=2, y=1))
 
 
 # As part of your function, you can alsop provide default values, which is useful if you have a commonly used
@@ -39,7 +39,22 @@ print(do_math(x=2, y=1))
 # output = first_word + " " + second_word + " " + third_word + " " + name
 # print output
 # end function code
+#
+# word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "andy")
+# word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "bambi")
 
-word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "andy")
-word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "bambi")
+#
+# def word_mixer(first_word, second_word, third_word, name):
+#     output = first_word + " " + second_word + " " + third_word + " " + name
+#     print(output)
+#     return
+#
+# word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "ben")
+# word_mixer(first_word = "my", third_word = "is not", second_word = "name", name = "andy")
 
+def f(a,b,c,d):
+    output = a + " " + b + " " + c + " " + d
+    print (output)
+
+f(a= "my", b = "is", c = "name", d = "andy")
+f(a = "my", b = "is", c = "name", d = "bambi")

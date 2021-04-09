@@ -1,40 +1,10 @@
 # Coding Challenge 9
 
-In this coding challenge, your objective is to utilize the radiating lines code used in class "9_Cursors" to take an input of sites from a provided Shapefile (Site_Locations.zip), use the radiating lines code to calculate "fetch distances" for each 10 degree bearing in a manner that originated from [Davies & Johnson (2006)](https://www.sciencedirect.com/science/article/pii/S0272771406001867). Finally, clip the resulting fetch lines by the NB_Coastline.zip shapefile, and report the mean plus standard deviation of the fetch distance for each site: 9 sites, A1....C3 in meters. We don't have wind data so can't calculate the estimate as accurately as in Davies & Johnson (2006). Note that I have provided a walkthrough guide of the general steps you need to take to calculate these values in the PowerPoint file and provided some more detailed hints and code.
+In this coding challenge, your objective is to utilize the arcpy.da module to undertake some basic partitioning of your dataset. In this coding challenge, I want you to work with the Forest Health Works dataset from [RI GIS](https://www.rigis.org/datasets/ri-forest-health-works-project-points-all-invasives?geometry=-73.625%2C41.322%2C-69.307%2C42.040) (I have provided this as a downloadable ZIP file in this repository). 
 
+Using the arcpy.da module (yes, there are other ways and better tools to do this), I want you to extract all sites that have a photo of the invasive species (Field: PHOTO) into a new Shapefile, and do some basic counts of the dataset. In summary, please addressing the following:
 
-```python
-origin_x, origin_y = (-71.42,  41.47)
-distance = 1
-angle = 10  # in degrees
+Count how many sites have photos, and how many do not (2 numbers), print the results.
+Count how many unique species there are in the dataset, print the result.
+Generate two shapefiles, one with photos and the other without.
 
-OutputFeature = out_name
-
-#create list of bearings
-angles = range(0, 360,angle)
-
-
-for ang in angles:
-    angle = float(int(ang))
-    (disp_x, disp_y) = (distance * sin(radians(angle)), distance * cos(radians(angle)))
-    (end_x, end_y) = (origin_x + disp_x, origin_y + disp_y)
-    (end2_x, end2_y) = (origin_x + disp_x, origin_y + disp_y)
-
-    cur = arcpy.InsertCursor(OutputFeature)
-    lineArray = arcpy.Array()
-
-    start = arcpy.Point()
-    (start.ID, start.X, start.Y) = (1, origin_x, origin_y)
-    lineArray.add(start)
-
-    end = arcpy.Point()
-    (end.ID, end.X, end.Y) = (2, end_x, end_y)
-    lineArray.add(end)
-
-    feat = cur.newRow()
-    feat.shape = lineArray
-    cur.insertRow(feat)
-
-    lineArray.removeAll()
-    del cur
-```

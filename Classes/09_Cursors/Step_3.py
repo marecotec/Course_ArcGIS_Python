@@ -7,7 +7,7 @@
 # or add in calculated values as required.
 
 # Below we use an UpdateCursor to manipulate our data based on two criteria, 1) what the fclass of the road is
-# and 2) what the vurrent maxspeed is. We want to set 'residential' roads that have a current max speed of 0
+# and 2) what the current maxspeed is. We want to set 'residential' roads that have a current max speed of 0
 # to 25 (mph).
 
 import arcpy
@@ -18,7 +18,7 @@ fields = ['fclass', 'name', 'maxspeed']
 expression = arcpy.AddFieldDelimiters(input_shp, "fclass") + " = 'residential'" + " AND "
 expression = expression + arcpy.AddFieldDelimiters(input_shp, "maxspeed") + " = 0"
 
-print "Executing UpdateCursor using Expression: " + expression
+print("Executing UpdateCursor using Expression: " + expression)
 
 # First let's see if our code works..
 with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
@@ -30,7 +30,7 @@ with arcpy.da.UpdateCursor(input_shp, fields, expression) as cursor:
     for row in cursor:
         row[2] = 25
         cursor.updateRow(row)
-        print "Updated..."
+        print("Updated...")
 
 # Check, should return no results
 with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:

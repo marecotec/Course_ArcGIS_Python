@@ -17,3 +17,10 @@ print("Value = ", x(5, 6, 2))
 
 # Task 1 - Using lambda, write a function to return the cube of a number (x*x*x).
 
+cube = lambda x: x*x*x
+print("Value = ", cube(2))
+
+
+def cube_of_number(x):
+    return x * x * x
+print(cube_of_number(3))
