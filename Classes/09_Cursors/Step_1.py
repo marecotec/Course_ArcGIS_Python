@@ -11,15 +11,15 @@
 # Using data that I obtained from: https://catalog.data.gov/dataset/sandhill-crane-locations-autumn-2013-migration
 # lets read in each record, and count how many records there are for crane number 100840:
 
-import csv
-with open(r"Step_1.csv") as crane_csv:
-    csv_reader = csv.reader(crane_csv, delimiter=',')
-    line_count = 0
-    for row in csv_reader:
-        if row[0] == "100840":
-            line_count += 1
-
-print("There are " + str(line_count) + " csv records for crane 100840.")
+# import csv
+# with open(r"Step_1.csv") as crane_csv:
+#     csv_reader = csv.reader(crane_csv, delimiter=',')
+#     line_count = 0
+#     for row in csv_reader:
+#         if row[0] == "100840":
+#             line_count += 1
+#
+# print("There are " + str(line_count) + " csv records for crane 100840.")
 
 # Uncomment the below, now let's now do the same using arcpy.da (arcpy data access module):
 
@@ -47,4 +47,3 @@ print("There are " + str(line_count) + " csv records for crane 100840.")
 #         crane_count[i]=1  #also: if not i in d
 #     else:
 #         crane_count[i]+=1
-

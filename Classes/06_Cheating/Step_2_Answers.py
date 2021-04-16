@@ -83,6 +83,6 @@ print("Compositing Bands... Finished")
 #     arcpy.CompositeBands_management(in_rasters=listRasters, out_raster=os.path.join(outputDirectory, "Winter" + year + ".tif"))
 #     print("Compositing Bands for " + year + " finished.")
 #
-# # Task 4 - See Step_3.py for the Task!
+# # Task 4 - See Step_2.py for the Task!
 
 

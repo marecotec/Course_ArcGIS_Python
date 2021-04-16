@@ -7,7 +7,7 @@
 # distance of 1 mile:
 import arcpy
 
-arcpy.env.workspace = r"C:\Course_ArcGIS_Python\Classes\10_Rasters\Step_0_Data"
+arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\10_Rasters\DataFolder\Step_0_Data"
 
 arcpy.Buffer_analysis("RI_Forest_Health_Works_Project_Points_All_Invasives.shp",
                       "RI_Forest_Health_Works_Project_Points_All_Invasives_Buffer.shp",

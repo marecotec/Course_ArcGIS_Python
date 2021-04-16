@@ -12,34 +12,35 @@
 
 import arcpy
 
-input_shp = 'Step_3_Data/URI_Campus_Roads_OSM.shp'
+input_shp = r'C:\Data\Course_ArcGIS_Python\Classes\09_Cursors\DataFolder_Step_3_Data\URI_Campus_Roads_OSM.shp'
 fields = ['fclass', 'name', 'maxspeed']
 
+# expression = arcpy.AddFieldDelimiters(input_shp, "fclass") + " = 'residential'" + " AND "
+# expression = expression + arcpy.AddFieldDelimiters(input_shp, "maxspeed") + " = 0"
+#
+# print("Executing UpdateCursor using Expression: " + expression)
+#
+# # First let's see if our code works..
+# with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
+#     for row in cursor:
+#         print(u'{0}, {1}, {2}'.format(row[0], row[1], row[2]))
+# #
+# # # # Run the update
+# with arcpy.da.UpdateCursor(input_shp, fields, expression) as cursor:
+#     for row in cursor:
+#         row[2] = 25
+#         cursor.updateRow(row)
+#         print("Updated...")
+
 expression = arcpy.AddFieldDelimiters(input_shp, "fclass") + " = 'residential'" + " AND "
-expression = expression + arcpy.AddFieldDelimiters(input_shp, "maxspeed") + " = 0"
+expression = expression + arcpy.AddFieldDelimiters(input_shp, "maxspeed") + " = 25"
 
-print("Executing UpdateCursor using Expression: " + expression)
-
-# First let's see if our code works..
+# # Check, should return no results
 with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
     for row in cursor:
         print(u'{0}, {1}, {2}'.format(row[0], row[1], row[2]))
-
-# Run the update
-with arcpy.da.UpdateCursor(input_shp, fields, expression) as cursor:
-    for row in cursor:
-        row[2] = 25
-        cursor.updateRow(row)
-        print("Updated...")
-
-# Check, should return no results
-with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
-    for row in cursor:
-        print(u'{0}, {1}, {2}'.format(row[0], row[1], row[2]))
-
 
 # Task a - Due to students frequently abusing Segways, the University has set all 'paths' to a speed limit of
 # 10 mph. Update URI_Campus_Roads_OSM.shp.
 
-
-# Task b - Mooresfield Road has been reclassified to 40 mph, correct this in the data file.
+# # Task b - Mooresfield Road has been reclassified to 40 mph, correct this in the data file.

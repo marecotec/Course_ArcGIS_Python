@@ -70,6 +70,6 @@ if not os.path.exists(outputDirectory):
 
 
 
-# Task 4 - See Step_3.py for the Task!
+# Task 4 - See Step_2.py for the Task!
 
 
