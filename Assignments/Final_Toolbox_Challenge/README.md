@@ -1,4 +1,4 @@
-# Final Toolbox Challenge (due Friday May 1st 17.30pm)
+# Final Toolbox Challenge (due Friday Apr 30 17.30pm)
 
 In your final assignment for this course, you should create a Python Toolbox that contains a minimum of three simple tools for undertaking geoprocessing and file management operations. These tools can be discrete or part of a larger workflow. However, the caveats are that you should create a "single file" toolbox (no includes, or external file tools) and not exceed 2000 lines of code in its entirety. You should document the toolbox using Github README.md and provide example data for running each of your tools. Grading and feedback will focus on: 1) Does the toolbox install, and the tools run successfully? 2) cleanliness of code, 3) functionality and depth of processing operation, and 4) appropriate use of documentation. Plus, 5) provide example data that allows me to test your tools.
 
