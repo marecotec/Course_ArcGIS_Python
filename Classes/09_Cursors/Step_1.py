@@ -23,13 +23,14 @@
 
 # Uncomment the below, now let's now do the same using arcpy.da (arcpy data access module):
 
-import arcpy
-line_count_da = 0
-with arcpy.da.SearchCursor("Step_1.csv", ['Crane', 'Time', 'X', 'Y']) as cursor:
-    for row in cursor:
-        if row[0] == 100840:
-            line_count_da += 1
-print("There are " + str(line_count_da) + " arcpy.da records for crane 100840.")
+# import arcpy
+# line_count_da = 0
+# with arcpy.da.SearchCursor("Step_1.csv", ['Crane', 'Time', 'X', 'Y']) as cursor:
+#     for row in cursor:
+#         if row[0] == 100840:
+#             line_count_da += 1
+# print("There are " + str(line_count_da) + " arcpy.da records for crane 100840.")
+
 
 # Task - Using arcpy.da, count how many individual cranes there are in the Step_1.csv data (hint: 5), and
 # extract their identification numbers and the number of records for each crane (hint: 100840, 100843, 100853, 100854).
@@ -38,11 +39,11 @@ print("There are " + str(line_count_da) + " arcpy.da records for crane 100840.")
 # then 2: for each item in your generated list, add it to a dict, count occurrences and then 3: print your len(dict)
 # and print dict.
 
-# Here's some helper code to help you do the count, but first you must generate the list!
+# Here's some helper code to help you do the count, but first you must generate the list of cranes (hint: append to a
+# crane list)!
 # crane_count={}
 # for i in YOUR_LIST_HERE:
-#     if not crane_count.has_key(i):
+#     if i not in crane_count.keys():
 #         crane_count[i]=1  #also: if not i in d
 #     else:
 #         crane_count[i]+=1
-

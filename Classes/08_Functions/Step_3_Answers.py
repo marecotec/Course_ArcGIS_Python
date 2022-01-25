@@ -11,12 +11,12 @@
 
 def changeme(mylist):
    mylist.append(40)
-   print "Values inside the function: ", mylist
+   print("Values inside the function: ", mylist)
    return
 
 mylist = [10, 20, 30]
 changeme(mylist)
-print "Values outside the function: ", mylist
+print("Values outside the function: ", mylist)
 
 # However, if you create a new variable inside a function, this change remains local to the function and does not
 # propagate outside of the function, unless you save it.
@@ -24,18 +24,18 @@ print "Values outside the function: ", mylist
 
 def changeme(mylist):
    mylist = [1, 2, 3, 4]
-   print "Values inside the function: ", mylist
+   print("Values inside the function: ", mylist)
    return mylist
 
 mylist = [10, 20, 30]
 changeme(mylist)
-print "Values outside the function: ", mylist
+print("Values outside the function: ", mylist)
 
 
 # Task 1 - Using the code above (lines 23 - 30), I want you to save and print the values from the function changeme,
 # i.e. the result would be output = [1, 2, 3, 4].
 
 output = changeme(mylist)
-print output
+print(output)
 
 

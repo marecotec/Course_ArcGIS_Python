@@ -7,7 +7,7 @@
 
 import arcpy
 
-input_shp = 'Step_2_Data/places.shp'
+input_shp = r'C:\Data\Course_ArcGIS_Python\Classes\09_Cursors\DataFolder_Step_2_Data\Places.shp'
 fields = ['code', 'population', 'name', 'SHAPE@XY']
 
 expression = """"population" > 1000"""  # The formatting of an expression is a bit messy...
@@ -31,13 +31,14 @@ with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
 # For bonus points, count how many there are (hint 53).
 import arcpy
 
-input_shp = 'Step_2_Data/places.shp'
+input_shp = r'C:\Data\Course_ArcGIS_Python\Classes\09_Cursors\DataFolder_Step_2_Data\Places.shp'
 fields = ['code', 'population', 'name', 'SHAPE@XY']
 
-expression = arcpy.AddFieldDelimiters(input_shp, "name") + " LIKE 'U%'"  # Cleaner and easier to code
+expression = arcpy.AddFieldDelimiters(input_shp, "name") + " LIKE 'S%'"  # Cleaner and easier to code
 count = 0
 with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
     for row in cursor:
         print(u'{0}, {1}, {2}'.format(row[0], row[1], row[2]))
         count = count + 1
-print count
+
+print(count)

@@ -13,7 +13,7 @@
 
 # Now let's create our own. The script is provided below, and a brief description of the workflow is provided.
 
-# 1. Open ArcToolbox, right click Add Toolbox, click new Toolbox icon in window that pops up, call it "Testing Toolbox.tbx"
+# 1. Open ArcToolboxes via ArcCatalog, right click Add Toolbox, click new Toolbox icon in window that pops up, call it "Testing Toolbox.tbx"
 # 2. Inside this new Toolbox, rc Add "Script", then add the following params:
 ##### Name = TestTool1 - This is the machine name of the script
 ##### Label = Test Tool 1 - This shows up in ArcToolbox as the name of the tool.

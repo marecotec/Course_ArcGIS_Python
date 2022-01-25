@@ -14,36 +14,36 @@ import glob
 import os
 
 # List all Python files in current directory
-print glob.glob("*.py")
+print(glob.glob("*.py"))
 # Change to parent of current directory (dangerous as you might struggle to change it back later...)
 os.chdir("../")
-print glob.glob("*") # no pattern match, lists all folders and files
+print(glob.glob("*")) # no pattern match, lists all folders and files
 # If you changed directory, you may need to change it back:
 
 
 # Part 2 - List files using os (more painful)
 all = os.listdir(os.curdir)# files and directories
-print all
-files = filter(os.path.isfile, os.listdir(os.curdir))  # files only, might not find anything
-print files
+print(all)
+files = list(filter(os.path.isfile, os.listdir(os.curdir)))  # files only, might not find anything
+print(files)
 
 for file in os.listdir(os.curdir):
     if file.endswith(".shp"):
-        print file
+        print(file)
 
 # Part 3 - List files using arcpy, note: all will return None
 import arcpy
 
 # ListFiles ({wild_card}) https://pro.arcgis.com/en/pro-app/arcpy/functions/listfiles.htm
-print arcpy.ListFiles("*")
+print(arcpy.ListFiles("*"))
 
 # ListDatasets ({wild_card}, {feature_type}) https://pro.arcgis.com/en/pro-app/arcpy/functions/listdatasets.htm
-print arcpy.ListDatasets("*",  "Feature")
+print(arcpy.ListDatasets("*",  "Feature"))
 # ListFeatureClasses ({wild_card}, {feature_type}, {feature_dataset}) https://pro.arcgis.com/en/pro-app/arcpy/functions/listfeatureclasses.htm
-print arcpy.arcpy.ListFeatureClasses("*")
+print(arcpy.arcpy.ListFeatureClasses("*"))
 
 # ListRasters ({wild_card}, {raster_type})  https://pro.arcgis.com/en/pro-app/arcpy/functions/listrasters.htm
-print arcpy.ListRasters("*", "TIF")
+print(arcpy.ListRasters("*", "TIF"))
 
 
 # Tasks
@@ -63,5 +63,5 @@ arcpy.env.workspace = "CHANGE TO YOUR DIR"
 
 # e - List and count all rasters in TIF format, how many are there?
 
-# f - List and count all folders beginning with the letter S, how many are there?
+# f - List and count all folders beginning with the letter/character S_, how many are there?
 

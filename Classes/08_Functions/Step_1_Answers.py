@@ -19,18 +19,16 @@ def do_math(x,y):
     value = x + y
     return value
 
-
-print do_math(1, 2)
+print(do_math(1, 2))
 
 
 # Task 1 - Comment out the above code (lines 15-21), and then execute the below code, analyze the error,
 # why did the code below not work?
 
-def print_me( str ):
+def print_me(str):
     """This prints a passed string into this function"""
-    print str
+    print(str)
     return
-
 
 print_me()
 
@@ -46,11 +44,11 @@ i = "a"
 j = "b"
 
 output = i + j + j + i
-print output
+print(output)
 
-def word_maker(i,j):
+def word_maker(i, j):
     output = i + j + j + i
-    print output
+    print(output)
     return
 
 word_maker("a", "b")
