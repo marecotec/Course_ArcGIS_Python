@@ -29,10 +29,10 @@ using PyCharm:
 # Commenting style is very user dependent, I want you to attempt to comment
 # the small code block below. What kind of information do you feel is pertinent?
 
-list = ['Hi', 'Hello', 'Allo']
+list1 = ['Hi', 'Hello', 'Allo']
 list2 = ['Bye', 'Goodbye', 'Au Revoir']
 
-for i in list:
+for i in list1:
     for z in list2:
-        print i + ' but its not ' + z
+        print(i + ' but its not ' + z)
 

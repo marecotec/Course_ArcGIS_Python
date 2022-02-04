@@ -5,13 +5,13 @@
 
 # This is bad variable naming:
 x = r'C:\Shapefile.shp'
-print x
+print(x)
 
 # This is not valid, as variables cannot start with a number nor can they contain spaces:
 1x = r'C:\Shapefile.shp'
-print 1x
+print(1x)
 x 1 = r'C:\Shapefile.shp'
-print x 1
+print(x 1)
 
 # Best practice variable naming:
 input_file_path = r'C:\Shapefile.shp'
@@ -46,7 +46,7 @@ example_integer = 2
 example_integer = int(2)
 not_an_integer = int(str('I am not an int'))
 # Be wary when computing using int:
-5 / 2 # = 2.5? Not according to Python, as it uses the floor value, and doesn't change datatype to float
+int(5 / 2) # = 2.5? Not according to Python, as it uses the floor value, and doesn't change datatype to float
 
 # Floats
 5.0 / 2 #As the first value is float, it will work, and give the correct answer
@@ -64,9 +64,9 @@ my_blank_list = []
 # Or populate your list with variables
 my_first_list = ['item 1', 'item 2', 'item 3', 4, 5., ['a', 'b']]
 # You can easily iterate through your list, see what happens to your list within a list though
-for i in my_first_list: print i
+for i in my_first_list: print(i)
 # You can query an item within a list:
-print my_first_list[0] #Note that zero notation, 0 = first item in list
+print(my_first_list[0]) #Note that zero notation, 0 = first item in list
 
 # You can add items to an exisiting list
 my_first_list.append('You added me later!')
@@ -85,32 +85,32 @@ print(number_list)
 
 # You may remove items from a list, by index, slice or by variable content
 del number_list[0]
-print number_list
+print(number_list)
 
 del number_list[1:2]
-print number_list
+print(number_list)
 
 number_list.remove(1)
-print number_list
+print(number_list)
 
-# Tuples
+# Tuples - Like lists but use () instead of [] and can't be changed after creation
 my_first_tuple = (1, 2, 3)
-print my_first_tuple
+print(my_first_tuple)
 
 # Tuples are immutable, cannot be changed after creation, try and see:
 my_first_tuple.append(4)
 
 
-# Dictionaries
+# Dictionaries - Used to store values in a key:value pair
 my_first_dictionary = {'Key1':'Hi', 'Key2':'Bye'}
-print my_first_dictionary['Key1']
+print(my_first_dictionary['Key1'])
 
 # You can't access a value or a key using an index:
-print my_first_dictionary[0]
+print(my_first_dictionary[0])
 
 # More complex dictionary:
 my_second_dictionary = { 1 : [{'Distance': '23', 'Density':'9'}], 2 : [{'Distance': '50', 'Density':'10'}], 3 : [{'Distance': '12', 'Density':'3'}] }
-print my_second_dictionary[1]
-print my_second_dictionary[1][0]['Distance']
-print my_second_dictionary[1][0]['Density']
+print(my_second_dictionary[1])
+print(my_second_dictionary[1][0]['Distance'])
+print(my_second_dictionary[1][0]['Density'])
 
