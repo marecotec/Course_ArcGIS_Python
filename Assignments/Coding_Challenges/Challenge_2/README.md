@@ -13,7 +13,7 @@ Using this list:
 1. Make a new list that has all the elements less than 5 from this list in it and print out this new list.
 2. Write this in one line of Python (you do not need to append to a list just print the output).
 
-You should have two solutions in this file.
+You should have two solutions in this file, one for item 1 and one for item 2. Item 2 is tricky so if you get stuck try your best (no penalty), for a hint check out the solution by desiato (here)[https://stackoverflow.com/questions/32580489/python-for-and-if-on-one-line]
 
 ### 2. List overlap
 
@@ -34,7 +34,7 @@ Using this string:
 ```Python
 string = 'hi dee hi how are you mr dee'
 ```
-1. Count the occurrence of each word, and print the word plus the count.
+1. Count the occurrence of each word, and print the word plus the count (hint, you might want to "split" this into a list by a white space: " ").
 
 ### 4. User input
 
@@ -49,7 +49,7 @@ print "Your age is " + str(age)
 
 ### 5. User input 2
 
-Using the following dictionary, ask the user for a word, and compute the *Scrabble* word score for that word (Scrabble is a word game, where players make words from letters, each letter is worth a point value), steal this code from the internet, format it and make it work:
+Using the following dictionary (or a similar one you found on the internet), ask the user for a word, and compute the *Scrabble* word score for that word (Scrabble is a word game, where players make words from letters, each letter is worth a point value), steal this code from the internet, format it and make it work:
 
 ```python
 letter_scores = {
