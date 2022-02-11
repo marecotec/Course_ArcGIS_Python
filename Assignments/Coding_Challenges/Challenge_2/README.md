@@ -11,7 +11,7 @@ Using this list:
 ```
 
 1. Make a new list that has all the elements less than 5 from this list in it and print out this new list.
-2. Write this in one line of Python.
+2. Write this in one line of Python (you do not need to append to a list just print the output).
 
 ### 2. List overlap
 
