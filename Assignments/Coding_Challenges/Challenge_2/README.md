@@ -49,7 +49,7 @@ print "Your age is " + str(age)
 
 ### 5. User input 2
 
-Using the following dictionary, ask the user for a word, and compute the *Scrabble* word score for that word (Scrabble is a word game, where players make words from letters, each letter is worth a point value):
+Using the following dictionary, ask the user for a word, and compute the *Scrabble* word score for that word (Scrabble is a word game, where players make words from letters, each letter is worth a point value), steal this code from the internet, format it and make it work:
 
 ```python
 letter_scores = {

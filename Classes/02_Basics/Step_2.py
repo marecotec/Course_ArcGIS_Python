@@ -20,7 +20,7 @@ arcpy.AddMessage(os.listdir(r'c:'))
 
 # You can also be selective in your loading of various packages by using from:
 from arcpy import AddMessage
-arcpy.AddMessage(r'I only loaded AddMessage')
+AddMessage(r'I only loaded AddMessage')
 
 
 

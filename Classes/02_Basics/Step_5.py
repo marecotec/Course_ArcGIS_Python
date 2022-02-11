@@ -20,7 +20,6 @@ print(i)
 # n = 6
 # n = 7
 
-try:
 n = 1
 while n < 10:
 if n == 5:
@@ -30,5 +29,3 @@ if n == 6:
 print('n = 6 <---')
 print('n = ' + str(n))
 n = n + 1
-except:
-print('my code failed')
