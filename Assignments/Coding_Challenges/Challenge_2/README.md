@@ -13,6 +13,8 @@ Using this list:
 1. Make a new list that has all the elements less than 5 from this list in it and print out this new list.
 2. Write this in one line of Python (you do not need to append to a list just print the output).
 
+You should have two solutions in this file.
+
 ### 2. List overlap
 
 Using these lists:
