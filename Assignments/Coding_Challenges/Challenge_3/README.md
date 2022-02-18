@@ -22,10 +22,10 @@ Replicate this tree of directories and subdirectories:
 
 ### 2. Push sys.argv to the limit
 
-Construct a rudimentary Python script that takes a series of inputs as a command from a bat file, and does something to them. The rules:
+Construct a rudimentary Python script that takes a series of inputs as a command from a bat file using sys.argv, and does something to them. The rules:
 
 1. Minimum of three arguments to be used.
-2. You must do something interesting in 15 lines or less within the Python file.
+2. You must do something simple in 15 lines or less within the Python file.
 3. Print or file generated output should be produced.
 
 ### 3. Working with CSV
@@ -37,4 +37,4 @@ Using Python (csv) calculate the following:
 1) Annual average for each year in the dataset.
 2) Minimum, maximum and average for the entire dataset.
 2) Seasonal average if Spring (March, April, May), Summer (June, July, August), Autumn (September, October, November) and Winter (December, January, February).
-3) Calculate the anomaly for each value in the dataset relative to the mean for the entire timeseries.
+3) Calculate the anomaly for each value in the dataset relative to the mean for the entire time series.

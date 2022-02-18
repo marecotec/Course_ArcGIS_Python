@@ -36,4 +36,4 @@ os.remove(path)
 os.rmdir(path)
 
 # Bonus Task 2 - Use os to make a directory in your root directory, add a subdirectory inside it, check if it is created,
-# delete the subdirectory and the main directory. Check if the main directory exists, print "namrdir EXISTS" or "namrdir NOT EXISTS"
+# delete the subdirectory and the main directory. Check if the main directory exists, print "name dir EXISTS" or "name dir NOT EXISTS"
