@@ -5,7 +5,7 @@
 
 # Part a - What are you?
 
-# Extract Step_2_data.zip into a folder of known location.
+# Extract Step_3_data.zip into a folder of known location.
 
 #  Below is example code that interrogates a shapefile and returns the type of data stored within it:
 import arcpy
@@ -17,7 +17,7 @@ print(desc.shapeType) # Providing you supply the same shapefile as me, you will 
 # see this link: http://pro.arcgis.com/en/pro-app/arcpy/functions/featureclass-properties.htm
 
 print(desc.extent)
-# Print a more accessible spatialReference output (this uses string substitution notation:
+# Print a more accessible spatialReference output (this uses string substitution notation):
 print("Extent:\n  XMin: {0},\n XMax: {1},\n YMin: {2},\n YMax: {3}".format(desc.extent.XMin, desc.extent.XMax, desc.extent.YMin, desc.extent.YMax))
 
 print(desc.spatialReference) # Returns meaningless information - geoprocessing spatial reference object, we need to go deeper
@@ -32,5 +32,3 @@ print(desc.spatialReference.type)
 # 3. Get min Y and max Y extent
 # 4. Get cell size of X and Y (hint: https://community.esri.com/thread/20092)
 # 5. Get number of bands (hint: http://pro.arcgis.com/en/pro-app/arcpy/functions/raster-dataset-properties.htm)
-
-
