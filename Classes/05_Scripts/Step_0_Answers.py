@@ -9,13 +9,13 @@ stringWords = "hi;hello;goodbye;au revoir"
 ##### add the result to a list named "listWords":
 
 listWords = stringWords.split(";")
-print listWords
+print(listWords)
 
 stringNumbers = "1 2 3 4 5"
 ##### add the result to a list named "listNumbers":
 
 listNumbers = stringNumbers.split(" ")
-print listNumbers
+print(listNumbers)
 
 # Task b: Using a for loop, do the following:
 
@@ -25,9 +25,9 @@ print listNumbers
 
 sumWords = 0
 for word in listWords:
-    print word + ": " + str(len(word))
+    print(word + ": " + str(len(word)))
     sumWords = sumWords + len(word)
-print "Total number= " + str(sumWords)
+print("Total number= " + str(sumWords))
 
 ##### Using a for loop (hint: you will need two loops), multiply every value in listNumbers by every
 # value in this list multiplyNumbers = [89, 28, 31] and calculate the sum. Answer = 2220. Hint:
@@ -39,7 +39,7 @@ sumMultiplyNumbers = 0
 for num in listNumbers:
     for num2 in multiplyNumbers:
         sumMultiplyNumbers = sumMultiplyNumbers + (int(str(num)) * int(str(num2)))
-print sumMultiplyNumbers
+print(sumMultiplyNumbers)
 
 # Task c: Read the contents of the csv file supplied (Step_0_Commands.csv) into four variables, that we
 # can use to program an extent environment. I have provided some starter code. Hint, you will need to use CSV.

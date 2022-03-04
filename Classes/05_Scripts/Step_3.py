@@ -7,7 +7,7 @@
 # generation. I have given hints, but everything you are using here has been shown in last week's
 # and this week's session.
 
-# Using Step_3_Birds.csv:
+# Using Step_3_Cepphus_grylle.csv:
 
 # 1. Convert Step_3_Cepphus_grylle.csv to a shapefile.
 
