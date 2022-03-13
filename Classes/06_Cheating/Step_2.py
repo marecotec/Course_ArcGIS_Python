@@ -34,7 +34,7 @@ import arcpy, os
 # arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2014"
 # listRasters = arcpy.ListRasters("*", "TIF")
 # print(listRasters)
-# # Remove the BQA.tif file from the list, replace ****** with the correct string.
+# # Remove the BQA.tif file from the list.
 # listRasters = [x for x in listRasters if "BQA" not in x]
 # print(listRasters)
 # # We need to solve problem of sorting B1-B11 correctly
