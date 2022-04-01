@@ -30,7 +30,7 @@ changeme(mylist)
 print("Values outside the function: ", mylist)
 
 
-# Task 1 - Using the code above (lines 25 - 32), I want you to save and print the values from the function changeme,
+# Task 1 - Using the code above (lines 23 - 30), I want you to save and print the values from the function changeme,
 # i.e. the result would be output = [1, 2, 3, 4].
 
 

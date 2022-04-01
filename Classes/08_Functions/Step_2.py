@@ -51,10 +51,3 @@
 #
 # word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "ben")
 # word_mixer(first_word = "my", third_word = "is not", second_word = "name", name = "andy")
-
-def f(a,b,c,d):
-    output = a + " " + b + " " + c + " " + d
-    print (output)
-
-f(a= "my", b = "is", c = "name", d = "andy")
-f(a = "my", b = "is", c = "name", d = "bambi")
