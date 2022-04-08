@@ -47,7 +47,9 @@
 #         crane_count[i]+=1
 
 import arcpy
+
 crane_list = []
+
 with arcpy.da.SearchCursor("Step_1.csv", ['Crane', 'Time', 'X', 'Y']) as cursor:
     for row in cursor:
         if row[0] not in crane_list:
@@ -56,7 +58,7 @@ with arcpy.da.SearchCursor("Step_1.csv", ['Crane', 'Time', 'X', 'Y']) as cursor:
 print(crane_list)
 print(len(crane_list))
 
-crane_count={}
+crane_count = {}
 
 for crane in crane_list:
     with arcpy.da.SearchCursor("Step_1.csv", ['Crane', 'Time', 'X', 'Y']) as cursor:

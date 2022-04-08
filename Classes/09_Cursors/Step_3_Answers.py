@@ -18,7 +18,7 @@ fields = ['fclass', 'name', 'maxspeed']
 expression = arcpy.AddFieldDelimiters(input_shp, "fclass") + " = 'residential'" + " AND "
 expression = expression + arcpy.AddFieldDelimiters(input_shp, "maxspeed") + " = 0"
 
-print "Executing UpdateCursor using Expression: " + expression
+print("Executing UpdateCursor using Expression: " + expression)
 
 # First let's see if our code works..
 with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
@@ -30,7 +30,7 @@ with arcpy.da.UpdateCursor(input_shp, fields, expression) as cursor:
     for row in cursor:
         row[2] = 25
         cursor.updateRow(row)
-        print "Updated..."
+        print("Updated...")
 
 # Check, should return no results
 with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
@@ -48,7 +48,7 @@ with arcpy.da.UpdateCursor(input_shp, fields, expression) as cursor:
     for row in cursor:
         row[2] = 10
         cursor.updateRow(row)
-        print "Updated..."
+        print("Updated...")
 
 # Task b - Mooresfield Road has been reclassified to 40 mph, correct this in the data file.
 expression = arcpy.AddFieldDelimiters(input_shp, "name") + " = 'Mooresfield Road'"
@@ -56,4 +56,4 @@ with arcpy.da.UpdateCursor(input_shp, fields, expression) as cursor:
     for row in cursor:
         row[2] = 40
         cursor.updateRow(row)
-        print "Updated..."
+        print("Updated...")
