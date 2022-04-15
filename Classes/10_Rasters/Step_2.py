@@ -11,7 +11,7 @@
 # model simulations and so on?
 
 # Be aware that the size of the raster is crucial as the resulting numpy array will reside in your computer
-# memory, so no 10gb files!
+# memory, so no 10gb files if you only have 8gb of RAM!
 
 import arcpy
 
@@ -33,5 +33,5 @@ newRaster = arcpy.NumPyArrayToRaster(arrFeet, lowerLeft, cellSize, value_to_noda
 newRaster.save("etopo10_ft.tif")
 
 # Task: Using the etopo10 dataset and a NumPyArray, extract only land values, replacing them with null data and
-# create the resulting tif file. Hint: arr[arr < 0] = -9999
+# create the resulting tif file. Hint: arr[arr < 0] = -9999, where -9999 is a null value
 

@@ -48,7 +48,7 @@ arr = arcpy.RasterToNumPyArray(inRas,nodata_to_value=0)
 # Print the resulting array
 print(arr.shape)
 
-# Now lets convert m to feet
+# Now lets convert land to null
 arr[arr < 0] = -9999
 
 newRaster = arcpy.NumPyArrayToRaster(arr, lowerLeft, cellSize, value_to_nodata=-9999)
