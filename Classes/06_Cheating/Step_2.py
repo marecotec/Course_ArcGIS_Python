@@ -14,7 +14,7 @@
 # Task 1 - Using Step_2_data.zip, select the first layer, and execute the tool "Composite Bands" on Winter_2013.
 # you will need to composite all the band images (ending in Bn.tif (where n = band number), do not add the BQA.tif
 # file. See Landsat 8 band reference -
-# https://www.usgs.gov/faqs/what-are-best-landsat-spectral-bands-use-my-research?qt-news_science_products=0#qt-news_science_products
+# https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites
 
 # Once the tool has successfully completed, go into the Geoprocessing "History" window, right click on the
 # Completed tool, select "Copy as Python Snippet" and paste the tool output below:
@@ -71,5 +71,3 @@ if not os.path.exists(outputDirectory):
 
 
 # Task 4 - See Step_2.py for the Task!
-
-
