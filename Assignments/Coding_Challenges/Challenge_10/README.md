@@ -6,7 +6,7 @@ Task 1 - Use what you have learned to process the Landsat files provided, this t
 
 Before you start, here is a suggested workflow:
 
-1) Extract the Step_3_data.zip file into a known location.
+1) Extract the Landsat_data_lfs.zip file into a known location.
 2) For each month provided, you want to calculate the NVDI, using the equation: nvdi = (nir - vis) / (nir + vis) https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index. Consider using the Raster Calculator Tool in ArcMap and using "Copy as Python Snippet" for the first calculation.
 
 The only rule is, you should run your script once, and generate the NVDI for ALL MONTHS provided. As part of your code submission, you should also provide a visualization document (e.g. an ArcMap layout in PDF format), showing the patterns for an area of RI that you find interesting.
