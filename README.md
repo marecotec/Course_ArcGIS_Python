@@ -1,5 +1,5 @@
 # Geographical Information Systems in Python
-### University of Rhode Island (Spring 2022)
+### University of Rhode Island (Spring 2023)
 
 ![Banner Image](/images/banner.png?raw=true)
 
