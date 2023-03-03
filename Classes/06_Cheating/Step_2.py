@@ -43,7 +43,7 @@ import arcpy, os
 # sorted_listRasters = sorted(noExtensionlistRasters, key=lambda x:int(x[42:])) #42 characters in name before hit band number LC08_L1TP_012031_20131212_20170307_01_T1_B1
 # sorted_listRasters = [x + ".tif" for x in sorted_listRasters]
 # print(sorted_listRasters)
-# arcpy.management.CompositeBands(listRasters,
+# arcpy.management.CompositeBands(sorted_listRasters,
 #                                 r"C:\Data\Course_ArcGIS_Python\Classes\06_Cheating\DataFolder_Step_2_data_lfs\Step_2_data\Winter_2014_Composite.tif")
 
 
@@ -70,4 +70,4 @@ if not os.path.exists(outputDirectory):
 
 
 
-# Task 4 - See Step_2.py for the Task!
+# Task 4 - See Coding Challenge 06 for continuation to this task.
