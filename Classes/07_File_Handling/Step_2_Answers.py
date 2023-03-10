@@ -108,9 +108,5 @@ for species_file in species_file_list:
     count = count + 1
     arcpy.Delete_management(lyr)
 
-#
-# Insert your code here
-#
-
 arcpy.Delete_management(os.path.join(input_directory, "temporary_files"))
 

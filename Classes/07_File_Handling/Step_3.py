@@ -8,10 +8,10 @@
 # https://pro.arcgis.com/en/pro-app/help/analysis/geoprocessing/basics/the-in-memory-workspace.htm
 
 # There are several limitations of this though, from the ArcGIS website:
-## Data written to the in-memory workspace is temporary and will be deleted when the application is closed.
-## Tables, feature classes, and rasters can be written to the in-memory workspace.
-## The in-memory workspace does not support extended geodatabase elements such as subtypes, domains, representations, topologies, geometric networks, and network datasets.
-## Feature datasets or folders cannot be created in the in-memory workspace.
+# Data written to the in-memory workspace is temporary and will be deleted when the application is closed.
+# Tables, feature classes, and rasters can be written to the in-memory workspace.
+# The in-memory workspace does not support extended geodatabase elements such as subtypes, domains, representations, topologies, geometric networks, and network datasets.
+# Feature datasets or folders cannot be created in the in-memory workspace.
 
 # Example with a Table
 
@@ -52,15 +52,14 @@ while row:
     row = cursor.next()
 
 arcpy.CopyFeatures_management("in_memory/points", os.path.join(directory, "Step_3_shp_output.shp"))
-#
-#
-# # Task 1 - Create an in_memory shapefile with the locations, points_list =[[20.000,43.000],[25.500, 45.085],[26.574, 46.025], [28.131, 48.124]]
-# # add new fields- Location, Species, and populate those fields for each row (for this example, each row should contain the same data
-# # eg Location = World, Species = Phragmites. When done, export the shapefile to ArcMap.
-#
-# # The code to add values to the fields for each record is this:
-# # cur = arcpy.UpdateCursor("in_memory/points1")
-# # for row in cur:
-# #     row.setValue('Location', "World")
-# #     row.setValue('Species', "Phragmites")
-# #     cur.updateRow(row)
+
+# Task 1 - Create an in_memory shapefile with the locations, points_list =[[20.000,43.000],[25.500, 45.085],[26.574, 46.025], [28.131, 48.124]]
+# add new fields- Location, Species, and populate those fields for each row (for this example, each row should contain the same data
+# eg Location = World, Species = Phragmites. When done, export the shapefile to ArcMap.
+
+# The code to add values to the fields for each record is this:
+# cur = arcpy.UpdateCursor("in_memory/points1")
+# for row in cur:
+#     row.setValue('Location', "World")
+#     row.setValue('Species', "Phragmites")
+#     cur.updateRow(row)
