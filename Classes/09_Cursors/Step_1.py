@@ -21,7 +21,8 @@ with open(r"Step_1.csv") as crane_csv:
 
 print("There are " + str(line_count) + " csv records for crane 100840.")
 
-# Uncomment the below, now let's now do the same using arcpy.da (arcpy data access module):
+# Uncomment the below, now let's now do the same using arcpy.da (arcpy data access module), you could of course
+# use select and get count but we are doing it the hard way!:
 
 # import arcpy
 # line_count_da = 0
