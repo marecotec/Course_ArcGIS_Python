@@ -18,7 +18,3 @@ data = "scientificName,	decimalLongitude,	decimalLatitude\n" \
        "Desmophyllum pertusum,	-88.37752,	29.06926\n" \
        "Desmophyllum dianthus,	-119.4718,	33.91861"
 
-
-
-# Run through some examples from Coding Challenge 6.
-
