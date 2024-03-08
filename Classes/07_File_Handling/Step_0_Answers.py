@@ -24,5 +24,3 @@ data = "scientificName,	decimalLongitude,	decimalLatitude\n" \
 file_create = open("species1.csv", "w")
 file_create.write(data)
 
-# Run through some examples from Coding Challenge 6.
-
