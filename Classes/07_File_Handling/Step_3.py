@@ -18,16 +18,16 @@
 import arcpy
 
 directory = r"C:\Data\Course_ArcGIS_Python\Classes\07_File_Handling"
-#
+
 arcpy.env.workspace = directory
-#
-# table = arcpy.CreateTable_management("in_memory", "table1")
-# arcpy.AddField_management(table, "Field1", "TEXT", field_length=20)
-#
-# cursor = arcpy.da.InsertCursor(table, ["Field1"])
-# cursor.insertRow(["Hello World"])
-#
-# arcpy.TableToTable_conversion(table, directory, "Step_3_Output.csv")
+
+table = arcpy.CreateTable_management("in_memory", "table1")
+arcpy.AddField_management(table, "Field1", "TEXT", field_length=20)
+
+cursor = arcpy.da.InsertCursor(table, ["Field1"])
+cursor.insertRow(["Hello World"])
+
+arcpy.TableToTable_conversion(table, directory, "Step_3_Output.csv")
 
 # Example with a Shapefile
 
@@ -43,7 +43,7 @@ for p in points_list:
 
 arcpy.CopyFeatures_management(ptGeoms, "in_memory/points")
 
-# Lets do something with the shapefile, just print the OID
+# Let's do something with the shapefile, just print the OID
 field = "OID"
 cursor = arcpy.SearchCursor("in_memory/points")
 row = cursor.next()

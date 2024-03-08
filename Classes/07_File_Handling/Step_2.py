@@ -81,7 +81,7 @@ if len(species_list) > 1:
 # Step 3: Convert those files into Shapefiles
 os.chdir("CHANGE TO YOUR DIR AND FILE")# same as env.workspace
 arcpy.env.workspace = os.path.join("CHANGE TO YOUR DIR AND FILE")
-species_file_list = glob.glob("*.csv")# Find all CSV files
+species_file_list = glob.glob("*.csv")# Find all CSV files... Now you will get an error because I have not imported..??
 
 count = 0
 
