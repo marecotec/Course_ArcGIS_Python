@@ -43,11 +43,3 @@
 # word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "andy")
 # word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "bambi")
 
-#
-# def word_mixer(first_word, second_word, third_word, name):
-#     output = first_word + " " + second_word + " " + third_word + " " + name
-#     print(output)
-#     return
-#
-# word_mixer(first_word = "my", third_word = "is", second_word = "name", name = "ben")
-# word_mixer(first_word = "my", third_word = "is not", second_word = "name", name = "andy")

@@ -26,7 +26,7 @@
 # describe_shp(input_shapefile)
 
 # Task 1 - Using the Places.shp provided, extend the describe_shp function to include the following outputs: 1) Coordinate system used, 2) Coordinate system type
-# Hint: you can find these at https://pro.arcgis.com/en/pro-app/arcpy/functions/describe.htm
+# Hint: you can find these at https://pro.arcgis.com/en/pro-app/arcpy/functions/describe.htm, and print them out in a well formatted style.
 
 import arcpy
 
