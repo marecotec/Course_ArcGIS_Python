@@ -11,26 +11,25 @@
 import arcpy
 arcpy.CheckOutExtension("Spatial")
 arcpy.env.overwriteOutput = True
-arcpy.env.workspace = r"Z:\Andy's Documents\Teaching and students\URI\NRS - GIS Python Course\Github\Course_ArcGIS_Python\Classes\12_Rasters\Step_1_Data"
-arcpy.gp.ZonalStatisticsAsTable_sa("Biogeography_Made_Up.shp", "Area", "sst_mean.tif", "sst_mean_zones.dbf", "DATA", "ALL")
+arcpy.env.workspace = r"H:\NRS528_2024\1_Class_Files\Classes\10_Rasters\Step_1_Data"
 
 # Task 1 -  Using a for loop, process all three *.tif files for SST (mean, min and max), you will need to edit the code above.
 # HInt: ZonalStats... is sensitive to file name output, you may need to use something that shortebs the output table name:
 # e.g. file_name = raster[:6] + "_out.dbf"
 
-raster_list = arcpy.ListRasters()
+# raster_list = arcpy.ListRasters()
+#
+# for raster in raster_list:
+#     file_name = raster[:6] + "_out.dbf"
+#     arcpy.gp.ZonalStatisticsAsTable_sa("Biogeography_Made_Up.shp", "Area", raster, file_name, "DATA",
+#                                        "ALL")
 
-for raster in raster_list:
-    file_name = raster[:6] + "_out.dbf"
-    arcpy.gp.ZonalStatisticsAsTable_sa("Biogeography_Made_Up.shp", "Area", raster, file_name, "DATA",
-                                       "ALL")
-
-# Pulling values from a raster using a point shapefule is also pretty easy, this time, we use the Extract Values tool.
-
-arcpy.gp.ExtractValuesToPoints_sa("Great_Whites.shp", "sst_mean.tif", "Great_Whites_Extract.shp", "NONE", "VALUE_ONLY")
-
-# Task 2 - I want you to run the tool above on the rasters provided (mean, min and max). Think about how you will do this,
-# maybe search online about extracting multiple values to points.
-
+# # Pulling values from a raster using a point shapefule is also pretty easy, this time, we use the Extract Values tool.
+#
+# arcpy.gp.ExtractValuesToPoints_sa("Great_Whites.shp", "sst_mean.tif", "Great_Whites_Extract.shp", "NONE", "VALUE_ONLY")
+#
+# # Task 2 - I want you to run the tool above on the rasters provided (mean, min and max). Think about how you will do this,
+# # maybe search online about extracting multiple values to points.
+#
 raster_list = arcpy.ListRasters()
 arcpy.gp.ExtractMultiValuesToPoints("Great_Whites.shp", raster_list, "BILINEAR")

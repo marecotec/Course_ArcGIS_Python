@@ -11,7 +11,7 @@
 import arcpy
 arcpy.CheckOutExtension("Spatial")
 arcpy.env.overwriteOutput = True
-arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\10_Rasters\DataFolder\Step_1_Data"
+arcpy.env.workspace = r"H:\NRS528_2024\1_Class_Files\Classes\10_Rasters\Step_1_Data"
 arcpy.gp.ZonalStatisticsAsTable_sa("Biogeography_Made_Up.shp", "Area", "sst_mean.tif", "sst_mean_zones.dbf", "DATA", "ALL")
 
 # Pulling values from a raster using a point shapefile is also pretty easy, this time, we use the Extract Values tool.

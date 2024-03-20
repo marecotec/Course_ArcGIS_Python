@@ -38,12 +38,12 @@
 
 import arcpy
 
-arcpy.env.workspace = r"C:\Course_ArcGIS_Python\Classes\10_Rasters\Step_3_Data"
+arcpy.env.workspace = r"H:\NRS528_2024\1_Class_Files\Classes\10_Rasters\Step_2_Data"
 inRas = arcpy.Raster("etopo10")
 lowerLeft = arcpy.Point(inRas.extent.XMin,inRas.extent.YMin)
 cellSize = inRas.meanCellWidth
 
-arr = arcpy.RasterToNumPyArray(inRas,nodata_to_value=0)
+arr = arcpy.RasterToNumPyArray(inRas, nodata_to_value=0)
 
 # Print the resulting array
 print(arr.shape)
