@@ -42,3 +42,4 @@ with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
         count = count + 1
 
 print(count)
+

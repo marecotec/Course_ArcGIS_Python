@@ -12,7 +12,7 @@
 
 import arcpy
 
-input_shp = r'C:\Data\Course_ArcGIS_Python\Classes\09_Cursors\DataFolder_Step_3_Data\URI_Campus_Roads_OSM.shp'
+input_shp = r'H:\NRS528_2024\1_Class_Files\Classes\09_Cursors\Step_3_Data\URI_Campus_Roads_OSM.shp'
 
 fields = ['fclass', 'name', 'maxspeed']
 
@@ -31,8 +31,8 @@ with arcpy.da.SearchCursor(input_shp, fields, expression) as cursor:
 #     for row in cursor:
 #         row[2] = 25
 #         cursor.updateRow(row)
-#         print("Updated...")
-
+#         print("Updated..." + str(row))
+#
 # expression = arcpy.AddFieldDelimiters(input_shp, "fclass") + " = 'residential'" + " AND "
 # expression = expression + arcpy.AddFieldDelimiters(input_shp, "maxspeed") + " = 25"
 #
