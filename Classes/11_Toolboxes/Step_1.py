@@ -7,14 +7,18 @@
 # script below. This is a Walk Through Session, so follow as I go along.
 
 # First you should add the Toolbox that I provided in Step_1_Data.zip, and we will look at the script and
-# code used to initialize it.
+# code used to initialize it. It needs a bit of work to get this running.
 
-## Add Toolbox provided to ArcToolbox
+# 1. Add Toolbox provided to the Toolboxes pane.
+# 2. Navigate to the script tool.
+# 3. If we run this tool as is, we will get an error as the path to the tool will not be set correctly.
+# 4. Right click the tool and select properties, update the file path to the script that I have provided: Testing_Tool_Script.py
+# 5. Now run the tool.
 
 # Now let's create our own. The script is provided below, and a brief description of the workflow is provided.
 
-# 1. Open ArcToolboxes via ArcCatalog, right click Add Toolbox, click new Toolbox icon in window that pops up, call it "Testing Toolbox.tbx"
-# 2. Inside this new Toolbox, rc Add "Script", then add the following params:
+# 1. Open the Toolboxes pane in ArcGIS Pro, right click Add Toolbox, click new Toolbox icon in window that pops up, call it "Testing Toolbox.tbx"
+# 2. Inside this new Toolbox, right click, Add "Script", then add the following params:
 ##### Name = TestTool1 - This is the machine name of the script
 ##### Label = Test Tool 1 - This shows up in ArcToolbox as the name of the tool.
 ##### Description = "Testing a tool, does nothing really".
@@ -27,10 +31,9 @@
 # 5. Click finish! Test it by adding two different strings to the tool.
 
 
-
 # Task - Taking the more complex code below, I want you to turn this into a toolbox. Note that it accepts
 # three arguments, one input line file and one input polygon file, and an output file. You do not need to
-# change the code below, just put it in it's own Python file, and then create the appropriate parameters
+# change the code below, just put it in its own Python file, and then create the appropriate parameters
 # inside the toolbox settings as we just walked through.
 
 
