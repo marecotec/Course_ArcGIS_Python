@@ -9,7 +9,7 @@ import arcpy, os
 from math import radians, sin, cos
 
 # Create an empty Shapefile
-arcpy.env.workspace = r"C:\Course_ArcGIS_Python\Classes\9_Cursors"
+arcpy.env.workspace = r"H:\NRS528_2024\1_Class_Files\Classes\09_Cursors"
 
 # Set local variables
 out_path = arcpy.env.workspace
@@ -36,7 +36,7 @@ angle = 10  # in degrees
 OutputFeature = os.path.join(out_path, out_name)
 
 #create list of bearings
-angles = range(0, 360,angle)
+angles = range(0, 360, angle)
 print(angles)
 
 
@@ -65,7 +65,7 @@ for ang in angles:
     feat.shape = lineArray
     cur.insertRow(feat)
 
-	# yes, this shouldn't really be necessary...
+    # yes, this shouldn't really be necessary...
     lineArray.removeAll()
     del cur
 
@@ -73,9 +73,9 @@ for ang in angles:
 # Task - Using the above code, amend it so you can do multiple origin_x and origin_y. Note that you don't have to do
 # too much to the code, so think of the steps you need to take before you touch this. BTW this is a hard one. Use this
 # for your input locations: input_locations = [(-71.42,  41.47), (-72.42,  42.47), (-73.42,  43.47)]
-input_locations = [(-71.42,  41.47), (-72.42,  42.47), (-73.42,  43.47)]
-
-for location in input_locations:
-    location == (-71.42,  41.47)
-    location[0] == -71.42
-    location[1] == 41.47
+# input_locations = [(-71.42,  41.47), (-72.42,  42.47), (-73.42,  43.47)]
+#
+# for location in input_locations:
+#     location == (-71.42,  41.47)
+#     location[0] == -71.42
+#     location[1] == 41.47

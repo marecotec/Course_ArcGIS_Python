@@ -44,7 +44,8 @@ print("There are " + str(line_count) + " csv records for crane 100840.")
 # crane list)!
 # crane_count={}
 # for i in YOUR_LIST_HERE:
-#     if i not in crane_count.keys():
-#         crane_count[i]=1  #also: if not i in d
-#     else:
-#         crane_count[i]+=1
+#     if crane == row[0]:
+#         if i not in crane_count.keys():
+#             crane_count[i]=1  #also: if not i in d
+#         else:
+#             crane_count[i]+=1

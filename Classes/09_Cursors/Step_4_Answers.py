@@ -77,7 +77,7 @@ import arcpy, os
 from math import radians, sin, cos
 
 # Create an empty Shapefile
-arcpy.env.workspace = r"C:\Course_ArcGIS_Python\Classes\9_Cursors"
+arcpy.env.workspace = r"H:\NRS528_2024\1_Class_Files\Classes\09_Cursors"
 
 # Set local variables
 out_path = arcpy.env.workspace
@@ -99,7 +99,6 @@ input_locations = [(-71.42,  41.47), (-72.42,  42.47), (-73.42,  43.47)]
 
 for i in input_locations:
 
-
     origin_x, origin_y = i[0], i[1]
     distance = 1
     angle = 10  # in degrees
@@ -107,7 +106,7 @@ for i in input_locations:
     OutputFeature = os.path.join(out_path, out_name)
 
     #create list of bearings
-    angles = range(0, 360,angle)
+    angles = range(0, 360, angle)
 
 
     for ang in angles:
@@ -138,3 +137,4 @@ for i in input_locations:
         # yes, this shouldn't really be necessary...
         lineArray.removeAll()
         del cur
+

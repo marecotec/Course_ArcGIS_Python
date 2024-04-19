@@ -17,14 +17,14 @@ from arcpy.sa import *
 from scipy.stats.stats import pearsonr
 arcpy.CheckOutExtension("Spatial")
 
-arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\10_Rasters\DataFolder\Step_3_Data"
+arcpy.env.workspace = r"H:\NRS528_2024\1_Class_Files\Classes\10_Rasters\Step_3_Data"
 arcpy.env.overwriteOutput = True
 
 input_data = r"Elevations.shp"
 arcpy.env.extent = input_data
 
-kfold = 5 # number of folds
-prop_samples = 30 # proportion of points to split into training and test
+kfold = 9 #number of folds
+prop_samples = 80 # proportion of points to split into training and test
 i = 0 # Just a counter we use to track the kfolds
 
 
@@ -59,13 +59,13 @@ while i < kfold:
     i = i + 1
 
 # 2) Now let's create several surfaces using simple interpolation:
-# training_shp = arcpy.ListFeatureClasses("*train*")
-# count = 0
-#
-# for i in training_shp:
-#     outIDW = Idw(i, "Elevation", 2000, 2, RadiusVariable(10, 50000))
-#     outIDW.save("elev_" + str(count) + ".tif")
-#     count = count + 1
+training_shp = arcpy.ListFeatureClasses("*train*")
+count = 0
+
+for i in training_shp:
+    outIDW = Idw(i, "Elevation", 500, 2, RadiusVariable(10, 50000))
+    outIDW.save("elev_" + str(count) + ".tif")
+    count = count + 1
 
 # 3) Now we have run through the generation and partitioning of the input shapefile, and created a
 # rudimentary interpolation using IDW. We need to validate the file. We should consider the steps you need to
@@ -83,31 +83,31 @@ while i < kfold:
 # https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/cell-statistics.htm
 # 7. Add clean up code to remove temporary files.
 
-# test_shp = arcpy.ListFeatureClasses("*test*")
-# pearson_values = []
-# raster_list = []
-#
-# for fc in test_shp:
-#     run = fc.split("_")
-#     arcpy.gp.ExtractValuesToPoints_sa(fc, "elev_" + str(run[1]) + ".tif", "elev_" + str(run[1]) + "_valid.shp", "NONE", "VALUE_ONLY")
-#     arr = arcpy.da.FeatureClassToNumPyArray("elev_" + str(run[1]) + "_valid.shp", ["Elevation", "RASTERVALU"])
-#     print("Interpolation " + str(run[1]) + " correlation = " + str(pearsonr(arr["Elevation"], arr["RASTERVALU"])))
-#
-#     pearson_values.append(pearsonr(arr["Elevation"], arr["RASTERVALU"])[0])
-#     raster_list.append("elev_" + str(run[1]) + ".tif")
-#
-#     arcpy.Delete_management("elev_" + str(run[1]) + "_valid.shp")
-#     arcpy.Delete_management("elv_" + str(run[1]) + "_train.shp")
-#     arcpy.Delete_management("elv_" + str(run[1]) + "_test.shp")
-#
-# print("Overall mean: " + str(sum(pearson_values) / float(len(pearson_values))))
-#
-# outCellStats = arcpy.sa.CellStatistics(raster_list, "MEAN", "DATA")
-# outCellStats.save("out_surface_mean.tif")
-#
-# outCellStats = arcpy.sa.CellStatistics(raster_list, "STD", "DATA")
-# outCellStats.save("out_surface_std.tif")
-#
-# for i in raster_list:
-#     arcpy.Delete_management(i)
+test_shp = arcpy.ListFeatureClasses("*test*")
+pearson_values = []
+raster_list = []
+
+for fc in test_shp:
+    run = fc.split("_")
+    arcpy.gp.ExtractValuesToPoints_sa(fc, "elev_" + str(run[1]) + ".tif", "elev_" + str(run[1]) + "_valid.shp", "NONE", "VALUE_ONLY")
+    arr = arcpy.da.FeatureClassToNumPyArray("elev_" + str(run[1]) + "_valid.shp", ["Elevation", "RASTERVALU"])
+    print("Interpolation " + str(run[1]) + " correlation = " + str(pearsonr(arr["Elevation"], arr["RASTERVALU"])))
+
+    pearson_values.append(pearsonr(arr["Elevation"], arr["RASTERVALU"])[0])
+    raster_list.append("elev_" + str(run[1]) + ".tif")
+
+    arcpy.Delete_management("elev_" + str(run[1]) + "_valid.shp")
+    arcpy.Delete_management("elv_" + str(run[1]) + "_train.shp")
+    arcpy.Delete_management("elv_" + str(run[1]) + "_test.shp")
+
+print("Overall mean: " + str(sum(pearson_values) / float(len(pearson_values))))
+
+outCellStats = arcpy.sa.CellStatistics(raster_list, "MEAN", "DATA")
+outCellStats.save("out_surface_mean.tif")
+
+outCellStats = arcpy.sa.CellStatistics(raster_list, "STD", "DATA")
+outCellStats.save("out_surface_std.tif")
+
+for i in raster_list:
+    arcpy.Delete_management(i)
 
