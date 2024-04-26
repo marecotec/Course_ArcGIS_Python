@@ -18,7 +18,7 @@ input_line = arcpy.Parameter(name="input_line",
                              parameterType="Required",  # Required|Optional|Derived
                              direction="Input",  # Input|Output
                              )
-input_line.value = "YOUR INPUT LINE HERE" # This is a default value that can be over-ridden in the toolbox
+input_line.value = r"H:\NRS528_2024\1_Class_Files\Classes\11_Toolboxes\Step_1_Data\Files_To_Make_Own_Toolbox_Tool\URI_Campus_Roads_OSM.shp" # This is a default value that can be over-ridden in the toolbox
 params.append(input_line)
 
 input_polygon = arcpy.Parameter(name="input_polygon",
